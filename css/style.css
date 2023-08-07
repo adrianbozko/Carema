@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Fahkwang:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.nav-link, .nav-link:hover {
+    color: #193C6C;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: #193C6C;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 6px;
+    left: 0;
+    background-color: #193C6C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.btn {
+    color: #ffff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-contact {
+    background-color: #193C6C;
+}
+
+.btn-contact:hover {
+    background-color: #EFD3D3;
+    color: #193C6C;
+}
+
+.form-bg-img {
+    border-radius: 10px;
+}
+
+.form-background {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.form-background-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.form-background-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.forms {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #EFD3D3;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.30);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.forms-title {
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1D3D6F;
+}
+
+.forms-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D3D6F;
+}
+
+.form-label {
+    font-size: 13px;
+    color: #1D3D6F;
+    font-weight: 400;
+}
+
+.btn-form-check, .btn-form-check:focus {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(29, 61, 111, 0.40);
+    background-color: #ffffff;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: #ffffff;
+    background-color: #193C6C;
+    border-color: #193C6C;
+}
+
+.btn-check:hover+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: #ffffff;
+    background-color: #193C6C;
+    border-color: #193C6C;
+}
+
+.form-text {
+    color: #1D3D6F;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: #193C6C;
+    border-color: #193C6C;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.75rem 5rem;
+}
