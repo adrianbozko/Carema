@@ -13,39 +13,43 @@
     <header>
         <div class="container">
             <div class="row clearfix align-items-center">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="logo">
-                        <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main">
+                        <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-4">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="nav justify-content-around">
+                <div class="col-md-10 d-flex justify-content-end gap-5">
+                    <ul class="nav justify-content-around align-content-center">
                         <li class="nav-item">
-                          <a class="nav-link hover-underline" href="#link1">Oferty pracy</a>
+                          <a class="nav-link hover-underline" href="#link1">O nas</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link hover-underline" href="#link2">Poznaj nas</a>
+                          <a class="nav-link hover-underline" href="#link2">Co gwarantujemy?</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link hover-underline" href="#link3">Co mówią Opiekunki</a>
+                          <a class="nav-link hover-underline" href="#link3">Oferty pracy</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hover-underline" href="#link3">Proces rekrutacji</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hover-underline" href="#link3">Kontakt</a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-4 d-flex justify-content-end">
                     <button class="btn btn-contact">
-                        Skontaktuj się z nami
+                      Kącik opiekunki
                     </button>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="container">
+      <div class="container">
             <div class="form-background">
               <img class="form-background-bg img-fluid" src="images/head_background.png"/>
               <img class="form-background-text img-fluid" src="images/form_text.png"/>
               <div class="col-4 forms">
-                <div class="forms-title text-center">WYPEŁNIJ FORMULARZ</div>
+                <div class="forms-title text-center">Wypełnij formularz</div>
                 <div class="forms-subtitle text-center">Znajdziemy dla Ciebie pracę!</div>
                 <form>
                   <div class="mb-3">
@@ -71,9 +75,10 @@
                     <input type="checkbox" class="btn-check" id="btn-bardzodobra" autocomplete="off">
                     <label class="btn btn-form-check" for="btn-bardzodobra">Bardzo dobra</label>
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-3 range-wrap">
                     <label for="experienceRange" class="form-label">Doświadczenie jako Opiekunka</label>
-                    <input type="range" class="form-range" min="0" max="5" id="experienceRange">
+                    <input type="range" class="form-range range-cust" min="0" max="5" id="experienceRange">
+                    <output class="bubble"></output>
                   </div>
                   <div class="mb-3">
                     <div class="form-text">
@@ -84,13 +89,14 @@
                     </div>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary">Aplikuj</button>
+                    <button type="submit" class="btn btn-primary w-100">Aplikuj</button>
                   </div>
                 </form>
-
               </div>
             </div>
-        </div>
+      </div>
+
+      
     </main>
 
 
