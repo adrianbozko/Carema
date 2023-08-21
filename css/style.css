@@ -5,7 +5,7 @@
     --main-color-2: #01A88F;
     --extra-color-1: #D1338A;
     --extra-color-2: #F0F0E8;
-    --text-color-1: #393939;
+    --text-color-1: #383838;
     --text-color-2: #606060;
   }
 
@@ -91,14 +91,14 @@ a, a:link, a:visited, a:active {
 
 .form-background-text {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 25px;
+    left: 25px;
 }
 
 .forms {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 25px;
+    right: 25px;
     background-color: #D9E4E2;
     border-radius: 10px;
     border: 2px solid rgba(3, 78, 63, 0.2);
@@ -219,15 +219,169 @@ a, a:link, a:visited, a:active {
     font-size: 18px;
  }
 
+/* What we offer? */
+ .our-offer-box {
+    background-color: #F0F0E8;
+    border-radius: 10px;
+ }
 
- /* No offer */
+
+/* Work offers */
+.offers-main-text {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--main-color-1);
+}
+
+.offers-sub-text {
+    font-size: 22px;
+    color: var(--text-color-2);
+}
+
+
+/* No offer */
  .no-offer-text {
     font-weight: 700;
     font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+ }
+
+ .no-offer-subtext {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
  }
  
  .btn-no-offer {
     background-color: var(--extra-color-1);
     padding: 18px 48px 18px 48px;
     border-radius: 47px;
+    max-width: fit-content;
  }
+
+ .green-bg {
+    background-color: var(--main-color-2);
+    border-radius: 10px;
+ }
+
+ .recruitment-box {
+    background-color: #F0F0E8;
+    border-radius: 10px;
+ }
+
+ .recruitment-text-title {
+    font-size: 50px;
+    color: var(--main-color-1);
+    font-weight: 700;
+    text-align: center;
+ }
+
+ .green-circle {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: var(--main-color-2);
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+ }
+
+ .recruitment-process-title {
+    color: var(--text-color-1);
+    font-weight: 700;
+    font-size: 26px;
+ }
+
+ .recruitment-process-text {
+    font-size: 18px;
+ }
+
+ hr {
+    color: #B9D1CE;
+    border-top: 2px solid;
+    opacity: 1;
+ }
+
+ .vr {
+    min-height: 40px;
+    opacity: 1;
+    color: var(--main-color-1);
+    width: 2px;
+ }
+
+ /* Contact & Form */
+ .contact-detail-box {
+    background-color: #D9E4E2;
+    border-radius: 10px;
+ }
+ 
+ .contact-main-text {
+    color: var(--main-color-1);
+    font-size: 40px;
+    font-weight: 700;
+ }
+
+ .contact-sub-text {
+    color: var(--text-color-2);
+    font-size: 22px;
+    font-weight: 400;
+ }
+
+ .contact-info-title {
+    color: var(--text-color-1);
+    font-size: 18px;
+    font-weight: 400;
+ }
+ 
+ .contact-info-details {
+    color: var(--main-color-1);
+    font-size: 22px;
+    font-weight: 700;
+ }
+
+ .contact-form-box {
+    background-color: var(--main-color-1);
+    border-radius: 10px;
+ }
+
+ .contact-form-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+ }
+
+ .forms2 .form-label {
+    color: #ffffff;
+ }
+
+ .forms2 .form-text {
+    color: #ffffff;
+}
+
+.forms2 .form-control {
+    background-color: #387367;
+    border-color: #387367;
+}
+
+.forms2 .form-control::-webkit-input-placeholder {
+    color: #8aada5;
+}
+
+.forms2 .form-control::placeholder {
+    color: #8aada5;
+    opacity: 1;
+}
+
+.forms2 .form-control::-ms-input-placeholder {
+    color: #8aada5;
+}
+
+ @media only screen and (max-width: 1399px) {
+    .forms {
+      display: none;
+    }
+  }

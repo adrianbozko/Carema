@@ -48,7 +48,7 @@
 
       <!-- BG and Form - Desktop -->
 
-      <div class="container">
+      <div class="container mb-5">
             <div class="form-background">
               <img class="form-background-bg img-fluid" src="images/head_background.png"/>
               <img class="form-background-text img-fluid" src="images/form_text.png"/>
@@ -70,13 +70,13 @@
                   </div>
                   <label for="btn-nieznam" class="form-label">Znajomość języka niemiekiego</label>
                   <div class="mb-3 d-flex justify-content-around">
-                    <input type="checkbox" class="btn-check" id="btn-nieznam" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-nieznam" name="language_level" autocomplete="off">
                     <label class="btn btn-form-check" for="btn-nieznam">Nie znam</label>
-                    <input type="checkbox" class="btn-check" id="btn-podstawowa" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-podstawowa" name="language_level" autocomplete="off">
                     <label class="btn btn-form-check" for="btn-podstawowa">Podstawowa</label>
-                    <input type="checkbox" class="btn-check" id="btn-srednia" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-srednia" name="language_level" autocomplete="off">
                     <label class="btn btn-form-check" for="btn-srednia">Średnia</label>
-                    <input type="checkbox" class="btn-check" id="btn-bardzodobra" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-bardzodobra" name="language_level" autocomplete="off">
                     <label class="btn btn-form-check" for="btn-bardzodobra">Bardzo dobra</label>
                   </div>
                   <div class="mb-3 range-wrap">
@@ -102,7 +102,7 @@
 
       <!-- Kim jesteśmy? -->
 
-      <div class="container my-5">
+      <div class="container mb-5">
         <div class="who-title mb-3">
           Kim jesteśmy?
         </div>
@@ -168,28 +168,204 @@
         </div>
       </div>
 
-      <!-- Co oferujemy -->
+      <!-- Co możemy Ci zagwarantować? -->
 
-      <div class="container">
-        Co oferujemy
+      <div class="container mb-5">
+        <div class="row our-offer-box p-5">
+          <div class="recruitment-text-title mb-4">Co możemy Ci zagwarantować?</div>
+        </div>
       </div>
 
       <!-- Oferty pracy -->
 
-      <div class="container">
-        Oferty pracy
+      <div class="container mb-5">
+        <div class="row offers-main-text justify-content-center">Oferty pracy</div>
+        <div class="row offers-sub-text justify-content-center">Sprawdź nasze oferty miesiąca!</div>
       </div>
 
       <!-- Zgłoś się -->
-      <div class="container">
-        <div class="row">
-          <div class="col no-offer-text">
-            Nie znalazłaś oferty dla siebie? Wypełnij formularz!
-            <div class="col btn btn-no-offer">
-              Zgłoś się!
+      <div class="container mb-5">
+        <div class="row green-bg py-4 justify-content-center">
+          <div class="no-offer-text mb-3">
+            To tylko kilka z naszych zleceń.
+          </div>
+          <div class="no-offer-subtext mb-4">Jeśli szukasz czegoś innego, nie ma sprawy!<br />Znajdziemy ofertę w sam raz dla Ciebie. Zgłoś się do nas,<br />a nasi Patroni Rekrutacji od razu zabiorą się za przeczesywanie bazy</div>
+          <div class="btn btn-no-offer">
+            Znajdź dla mnie ofertę
+          </div>
+        </div>
+      </div>
+
+      <!-- Proces rekrutacji -->
+
+      <div class="container mb-5">
+        <div class="row recruitment-box p-5">
+          <div class="recruitment-text-title mb-4">Proces rekrutacji</div>
+          <div class="row align-items-center">
+            <div class="col-1">
+              <div class="green-circle rounded-circle">1</div>
+            </div>
+            <div class="col-3 recruitment-process-title">
+              Zgłoś się do nas
+            </div>
+            <div class="col-8 recruitment-process-text">
+              Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! Jak?<br />Jak tylko Ci wygodnie. 😉 Możesz zadzwonić i od razu podpytać Patronów o wszystko, co Cię nurtuje, napisać do nas na WhatsAppie lub wypełnić formularz zgłoszeniowy.
             </div>
           </div>
-          
+          <div class="row horizontal-line py-3">
+            <div class="col-1 d-flex justify-content-center"><div class="vr d-flex "></div></div>
+            <div class="col-11"><hr></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-1">
+              <div class="green-circle rounded-circle">2</div>
+            </div>
+            <div class="col-3 recruitment-process-title">
+              Porozmawiajmy
+            </div>
+            <div class="col-8 recruitment-process-text">
+              Patroni dzwonią do Ciebie i opowiadają o szczegółach. Chcemy, żebyś była jak najlepiej poinformowana o warunkach pracy i nie miała żadnych wątpliwości (oczywiście, jeśli się pojawią zawsze możesz do nas dzwonić 😉). Twój osobisty Patron pozna Twoje preferencje i umiejętności językowe. Następnie wyszuka zlecenie dostosowane specjalnie do Ciebie.
+            </div>
+          </div>
+          <div class="row horizontal-line py-3">
+            <div class="col-1 d-flex justify-content-center"><div class="vr d-flex "></div></div>
+            <div class="col-11"><hr></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-1">
+              <div class="green-circle rounded-circle">3</div>
+            </div>
+            <div class="col-3 recruitment-process-title">
+              Mamy ofertę dla Ciebie
+            </div>
+            <div class="col-8 recruitment-process-text">
+              Patron znajduje odpowiednie zlecenie i przedstawia Ci jego szczegóły. Opowiada, jaki jest podopieczny, jaki jest jego stan zdrowia, usposobienie, rodzina. Możesz zapytać o wszystko. Zależy nam, abyś przed wyjazdem miała pełną wiedzę na temat pracy. Wszystkie nasze zlecenia są zweryfikowane przez niemieckich partnerów, ale i Opiekunki. 😊
+            </div>
+          </div>
+          <div class="row horizontal-line py-3">
+            <div class="col-1 d-flex justify-content-center"><div class="vr d-flex "></div></div>
+            <div class="col-11"><hr></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-1">
+              <div class="green-circle rounded-circle">4</div>
+            </div>
+            <div class="col-3 recruitment-process-title">
+              Twoja akceptacja
+            </div>
+            <div class="col-8 recruitment-process-text">
+              Wybrałaś zlecenie, które Ci odpowiada? Świetnie. Teraz czas na podpisanie umowy. Patroni wyjaśnią Ci szczegółowo każdą stronę, wszystkie formalności i sposób rozliczeń. A co jest w tym najwygodniejsze? Umowę możesz podpisać online, w swoim domu!
+            </div>
+          </div>
+          <div class="row horizontal-line py-3">
+            <div class="col-1 d-flex justify-content-center"><div class="vr d-flex "></div></div>
+            <div class="col-11"><hr></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-1">
+              <div class="green-circle rounded-circle">5</div>
+            </div>
+            <div class="col-3 recruitment-process-title">
+              No to jedziemy!
+            </div>
+            <div class="col-8 recruitment-process-text">
+              Dedykowany Tobie Patron wszystkim się zajmie – zorganizuje darmową podróż spod Twojego domu do podopiecznego, załatwi prywatne ubezpieczenie, udzieli wszystkich informacji.
+            </div>
+          </div>
+          <div class="row horizontal-line py-3">
+            <div class="col-1 d-flex justify-content-center"><div class="vr d-flex "></div></div>
+            <div class="col-11"><hr></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-1">
+              <div class="green-circle rounded-circle">6</div>
+            </div>
+            <div class="col-3 recruitment-process-title">
+              Wspieramy
+            </div>
+            <div class="col-8 recruitment-process-text">
+              Nie zostawimy Cię na zleceniu samej. Chcemy budować relację i dbać o Twój komfort. Dlatego Twój Patron będzie dzwonił do Ciebie w każdym tygodniu. To przestrzeń dla Ciebie – możesz poopowiadać, co słychać na zleceniu, jak się czujesz, o wszystkim, o czym tylko chcesz. Patron zawsze wysłucha i w razie potrzeby pomoże. Możesz do niego dzwonić również w inne dni, kiedy potrzebujesz pomocy lub tylko (albo aż) samej rozmowy.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontakt & formularz -->
+
+      <div class="container mb-5">
+        <div class="d-flex grid gap-3">
+          <div class="col-7 p-5 contact-detail-box">
+            <div class="row contact-main-text justify-content-center">Jak się z nami skontaktować?</div>
+            <div class="row contact-sub-text justify-content-center">Tak, jak Ci wygodnie!</div>
+            <div class="row my-4">
+              <div class="col">
+                <div class="contact-info-title">Zadzwoń:</div>
+                <div class="contact-info-details">+48 737 932 272</div>
+              </div>
+              <div class="col">
+                <div class="contact-info-title">Napisz na Messengerze:</div>
+                <div class="contact-info-details">Facebook: CAREMA</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="contact-info-title">Skorzystaj z WhatsAppa:</div>
+                <div class="contact-info-details">+48 357 357 863</div>
+              </div>
+              <div class="col">
+                <div class="contact-info-title">Wyślij maila:</div>
+                <div class="contact-info-details">rekrutacja@carema.pl</div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <img src="images/contact_img.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-5 p-5 contact-form-box">
+            <div class="row">
+              <div class="contact-form-title">Wypełnij formularz</div>
+              <div class="forms2">
+                <form>
+                  <div class="mb-2">
+                    <label for="name1" class="form-label">Imię*</label>
+                    <input type="text" class="form-control" id="name1" name="name1" placeholder="Wpisz swoje imię" required>
+                  </div>
+                  <div class="mb-2">
+                    <label for="surname1" class="form-label">Nazwisko*</label>
+                    <input type="text" class="form-control" id="surname1" name="surname1" placeholder="Wpisz swoje nazwisko" required>
+                  </div>
+                  <div class="mb-2">
+                    <label for="phone1" class="form-label">Telefon*</label>
+                    <input type="tel" class="form-control" id="phone1" name="phone1" minlength="9" placeholder="+48 123 456 789" required>
+                  </div>
+                  <div class="mb-2">
+                    <label for="email1" class="form-label">Mail*</label>
+                    <input type="email" class="form-control" id="email1" name="email1" minlength="9" placeholder="Wpisz swój adres e-mail" required>
+                  </div>
+                  <div class="mb-2">
+                    <label for="Textarea1" class="form-label">Twoja wiadomość</label>
+                    <textarea class="form-control" id="Textarea1" rows="3" placeholder="Wpisz swoją wiadomość"></textarea>
+                  </div>
+                  <div class="mb-2">
+                    <div class="form-text">
+                      *Pola obowiązkowe
+                    </div>
+                    <div class="form-text">
+                      Informacje o przetwarzaniu Twoich danych osobowych znajdziesz tutaj.
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-100">Wyślij wiadomość</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
