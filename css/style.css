@@ -380,6 +380,44 @@ a, a:link, a:visited, a:active {
     color: #8aada5;
 }
 
+/* Footer */
+
+.footer-green-box {
+    background-color: var(--main-color-1);
+    color: #ffffff;
+}
+
+.footer-contact-text {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-contact-subtext {
+    font-size: 18px;
+}
+
+.btn-footer-1, .btn-footer-2 {
+    border-radius: 47px;
+    min-width: 226px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn-footer-1 {
+    border: 2px solid var(--main-color-2);
+}
+
+.btn-footer-2 {
+    border: 2px solid var(--main-color-2);
+    background-color: var(--main-color-1);
+}
+
+.btn-arrow-up {
+    border-color: #ffffff;
+    background-color: var(--main-color-1);
+    line-height: 1.5;
+}
+
  @media only screen and (max-width: 1399px) {
     .forms {
       display: none;
