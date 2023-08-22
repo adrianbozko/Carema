@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-        <div class="container">
+        <div class="container" id="top">
             <div class="row clearfix align-items-center">
                 <div class="col-md-2">
                     <div class="logo">
@@ -52,7 +52,7 @@
             <div class="form-background">
               <img class="form-background-bg img-fluid" src="images/head_background.png"/>
               <img class="form-background-text img-fluid" src="images/form_text.png"/>
-              <div class="col-4 forms">
+              <div class="col-4 forms" id="form1">
                 <div class="forms-title text-center">Wypełnij formularz</div>
                 <div class="forms-subtitle text-center">Znajdziemy dla Ciebie pracę!</div>
                 <form>
@@ -66,10 +66,10 @@
                   </div>
                   <div class="mb-3">
                     <label for="phone" class="form-label">Telefon*</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" minlength="9" placeholder="123456789" required>
+                    <input type="tel" class="form-control" id="phone" name="phone" minlength="9" placeholder="+48 123 456 789" required>
                   </div>
-                  <label for="btn-nieznam" class="form-label">Znajomość języka niemiekiego</label>
-                  <div class="mb-3 d-flex justify-content-around">
+                  <label for="checki" class="form-label">Znajomość języka niemiekiego</label>
+                  <div class="mb-3 d-flex justify-content-around checki">
                     <input type="radio" class="btn-check" id="btn-nieznam" name="language_level" autocomplete="off">
                     <label class="btn btn-form-check" for="btn-nieznam">Nie znam</label>
                     <input type="radio" class="btn-check" id="btn-podstawowa" name="language_level" autocomplete="off">
@@ -107,7 +107,11 @@
           Kim jesteśmy?
         </div>
         <div class="who-description mb-5">
-          W Carema zapewniamy pracę dla Opiekunek i Opiekunów seniorów w Niemczech.<br />U nas możesz liczyć na transparentne warunki zatrudnienia, atrakcyjne wynagrodzenie,<br />wsparcie koordynatorów i pomoc przez całą dobę. Twój komfort jest dla nas najważniejszy.
+          Oto my – Twój zespół!<br />
+          <b>Nasze doświadczenie w branży opiekuńczej</b> można liczyć w latach.<br />
+          Dlatego postanowiliśmy wziąć sprawy w swoje ręce i stworzyć CAREMĘ.<br />
+          Nasz cel jest prosty: <b>pomóc Ci znaleźć pracę</b> w zawodzie Opiekunki w Niemczech.<br />
+          Nie tylko przedstawimy Ci odpowiednie zlecenie. <b>Chcemy przerwać utarte schematy i skupić się<br />na Tobie,</b> być dla Ciebie pełnym wsparciem!
         </div>
         <div class="who-team row">
           <div class="col">
@@ -209,7 +213,7 @@
               Zgłoś się do nas
             </div>
             <div class="col-8 recruitment-process-text">
-              Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! Jak?<br />Jak tylko Ci wygodnie. 😉 Możesz zadzwonić i od razu podpytać Patronów o wszystko, co Cię nurtuje, napisać do nas na WhatsAppie lub wypełnić formularz zgłoszeniowy.
+              Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! Jak?<br />Jak tylko Ci wygodnie. 😉 Możesz <a href="tel:+48737932272">zadzwonić</a> i od razu podpytać Patronów o wszystko,<br />co Cię nurtuje, napisać do nas na <a href="https://wa.me/48357357863">WhatsAppie</a> lub <a href="#form1">wypełnić formularz zgłoszeniowy.</a>
             </div>
           </div>
           <div class="row horizontal-line py-3">
@@ -289,7 +293,7 @@
               Wspieramy
             </div>
             <div class="col-8 recruitment-process-text">
-              Nie zostawimy Cię na zleceniu samej. Chcemy budować relację i dbać o Twój komfort. Dlatego Twój Patron będzie dzwonił do Ciebie w każdym tygodniu. To przestrzeń dla Ciebie – możesz poopowiadać, co słychać na zleceniu, jak się czujesz, o wszystkim, o czym tylko chcesz. Patron zawsze wysłucha i w razie potrzeby pomoże. Możesz do niego dzwonić również w inne dni, kiedy potrzebujesz pomocy lub tylko (albo aż) samej rozmowy.
+              Nie zostawimy Cię na zleceniu samej. Chcemy budować relację i dbać o Twój komfort. Dlatego Twój Patron będzie dzwonił do Ciebie w każdym tygodniu. To przestrzeń dla Ciebie – możesz poopowiadać, co słychać na zleceniu, jak się czujesz, o wszystkim, o czym tylko chcesz. Patron zawsze wysłucha i w razie potrzeby pomoże. Możesz do niego dzwonić również w inne dni, kiedy potrzebujesz pomocy lub tylko (albo aż) samej rozmowy. Przez całą dobę, 7 dni w tygodniu, w każde święto działa również nasza linia PN – linia Pomocy Nagłej. Jeśli zdarzy się coś, co wymaga naszej niezwłocznej ingerencji, dzwoń śmiało!
             </div>
           </div>
         </div>
@@ -298,35 +302,49 @@
       <!-- Kontakt & formularz -->
 
       <div class="container mb-5">
-        <div class="d-flex grid gap-3">
-          <div class="col-7 p-5 contact-detail-box">
-            <div class="row contact-main-text justify-content-center">Jak się z nami skontaktować?</div>
+        <div class="row">
+          <div class="col-lg-7 no-padding-left">
+            <div class="p-5 contact-detail-box">
+              <div class="row contact-main-text justify-content-center">Jak się z nami skontaktować?</div>
             <div class="row contact-sub-text justify-content-center">Tak, jak Ci wygodnie!</div>
             <div class="row my-4">
-              <div class="col">
-                <div class="contact-info-title">Zadzwoń:</div>
-                <div class="contact-info-details">+48 737 932 272</div>
+              <div class="col d-flex align-items-center">
+                  <img src="images/phone_contact.png" class="img-fluid icon">
+                <div class="details">
+                  <div class="contact-info-title">Zadzwoń:</div>
+                  <div class="contact-info-details">+48 737 932 272</div>
+                </div>
               </div>
-              <div class="col">
-                <div class="contact-info-title">Napisz na Messengerze:</div>
-                <div class="contact-info-details">Facebook: CAREMA</div>
+              <div class="col d-flex align-items-center">
+                  <img src="images/fb_contact.png" class="img-fluid icon">
+                <div class="details">
+                  <div class="contact-info-title">Napisz na Messengerze:</div>
+                  <div class="contact-info-details">Facebook: CAREMA</div>
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
-                <div class="contact-info-title">Skorzystaj z WhatsAppa:</div>
-                <div class="contact-info-details">+48 357 357 863</div>
+              <div class="col d-flex align-items-center">
+                  <img src="images/whatsapp_contact.png" class="img-fluid icon">
+                <div class="details">
+                  <div class="contact-info-title">Skorzystaj z WhatsAppa:</div>
+                  <div class="contact-info-details">+48 357 357 863</div>
+                </div>
               </div>
-              <div class="col">
-                <div class="contact-info-title">Wyślij maila:</div>
-                <div class="contact-info-details">rekrutacja@carema.pl</div>
+              <div class="col d-flex align-items-center">
+                  <img src="images/mail_contact.png" class="img-fluid icon">
+                <div class="details">
+                  <div class="contact-info-title">Wyślij maila:</div>
+                  <div class="contact-info-details">rekrutacja@carema.pl</div>
+                </div>
               </div>
             </div>
             <div class="row mt-4">
               <img src="images/contact_img.png" class="img-fluid">
             </div>
+            </div>
           </div>
-          <div class="col-5 p-5 contact-form-box">
+          <div class="col-lg-5 p-5 contact-form-box">
             <div class="row">
               <div class="contact-form-title">Wypełnij formularz</div>
               <div class="forms2">
@@ -376,37 +394,47 @@
       <div class="container-fluid footer-green-box py-5">
         <div class="container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3">
               <div class="footer-contact-text">Kontakt:</div>
               <div class="row align-items-center my-3">
                 <div class="col-2"><img src="images/phone.png" class="img-fluid"></div>
-                <div class="col-10 footer-contact-subtext">+ 48 737 932 272</div>
+                <div class="col-10 footer-contact-subtext"><a href="tel:+48737932272">+48 737 932 272</a></div>
               </div>
               <div class="row align-items-center my-3">
                 <div class="col-2"><img src="images/mail.png" class="img-fluid"></div>
-                <div class="col-10 footer-contact-subtext">rekrutacja@carema.pl</div>
+                <div class="col-10 footer-contact-subtext"><a href="mailto:rekrutacja@carema.pl">rekrutacja@carema.pl</a></div>
               </div>
               <div class="row align-items-center mt-3">
                 <div class="col-2"><img src="images/facebook.png" class="img-fluid"></div>
-                <div class="col-10 footer-contact-subtext">Carema</div>
+                <div class="col-10 footer-contact-subtext"><a href="www.facebook.com">Carema</a></div>
               </div>
             </div>
-            <div class="col-5">
+            <div class="col-lg-5">
               <div class="footer-logo d-flex justify-content-center"><img src="images/footerlogo.png" class="img-fluid"></div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
               <div class="footer-contact-buttons vstack gap-3 flex-wrap align-items-center">
                 <div class="btn btn-footer-1">Aplikuj</div>
-                <div class="btn btn-footer-2">Zadzwoń do nas</div>
+                <a class="btn btn-footer-2" role="button" href="tel:+48737932272">Zadzwoń do nas</a>
               </div>
             </div>
-            <div class="col-1">
+            <div class="col-lg-1">
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-arrow-up"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <a class="btn btn-arrow-up" role="button" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                </svg></button>
+                </svg></a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid footer-pink-box">
+        <div class="container">
+          <div class="d-flex py-2">
+            <div class="pink-box-text pe-4">Copyright Carema 2023</div>
+            <div class="pink-box-text pe-4">|</div>
+            <div class="pink-box-text"><a href="politykaprywatnosci">Polityka prywatności</a></div>
           </div>
         </div>
       </div>
