@@ -11,14 +11,14 @@
   </head>
   <body>
     <header>
-        <div class="container" id="top">
+        <div class="container display-only-pc-1" id="top">
             <div class="row clearfix align-items-center">
                 <div class="col-md-2">
                     <div class="logo">
                         <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-4">
                     </div>
                 </div>
-                <div class="col-md-10 d-flex justify-content-end gap-5">
+                <div class="col-md-10 d-flex justify-content-end gap-3">
                     <ul class="nav justify-content-around align-content-center">
                         <li class="nav-item">
                           <a class="nav-link hover-underline" href="#onas">O nas</a>
@@ -40,6 +40,52 @@
                 </div>
             </div>
         </div>
+
+        <!-- Navbar Mobile -->
+
+        <nav class="navbar bg-body-tertiary display-only-mobile-1">
+          <div class="container">
+            <div class="logo">
+              <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <div class="logo">
+                    <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2">
+                  </div>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-3 gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link hover-underline" href="#onas">O nas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-underline" href="#gwarantujemy">Co gwarantujemy?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-underline" href="#oferty">Oferty pracy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-underline" href="#rekrutacja">Proces rekrutacji</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover-underline" href="#kontakt">Kontakt</a>
+                  </li>
+                </ul>
+                <div class="d-flex ">
+                  <a href="https://carema.eliot.solutions/#/login" class="btn btn-contact w-100" role="button" target="_blank">Kącik opiekunki</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
     </header>
     <main>
 
@@ -52,7 +98,7 @@
               <div class="col-4 forms" id="form1">
                 <div class="forms-title text-center">Wypełnij formularz</div>
                 <div class="forms-subtitle text-center">Znajdziemy dla Ciebie pracę!</div>
-                <form>
+                <form class="form-1">
                   <div class="mb-3">
                     <label for="name" class="form-label">Imię*</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Anna" required>
@@ -116,10 +162,10 @@
               <img src="images/team_1.png" class="img-fluid who-img">
             </div>
             <div class="who-name">
-              Piotr Nowakowski
+              Piotr Wunsch
             </div>
             <div class="who-position">
-              Prezes zarządu
+              Patron Patronów
             </div>
           </div>
           <div class="col">
@@ -127,10 +173,10 @@
               <img src="images/team_2.png" class="img-fluid who-img">
             </div>
             <div class="who-name">
-              Piotr Piotrowski
+              Klaudia
             </div>
             <div class="who-position">
-              Koordynator ds. opieki
+              Patronka rekrutacji
             </div>
           </div>
           <div class="col">
@@ -138,10 +184,10 @@
               <img src="images/team_3.png" class="img-fluid who-img">
             </div>
             <div class="who-name">
-              Rafał Kowalski
+              Daria
             </div>
             <div class="who-position">
-              Koordynator ds. opieki
+              Patronka zleceń
             </div>
           </div>
           <div class="col">
@@ -149,10 +195,10 @@
               <img src="images/team_4.png" class="img-fluid who-img">
             </div>
             <div class="who-name">
-              Marta Dolar
+              Bartek
             </div>
             <div class="who-position">
-              Specjalista ds. rekrutacji
+              Patron wyjazdu
             </div>
           </div>
           <div class="col">
@@ -160,10 +206,10 @@
               <img src="images/team_5.png" class="img-fluid who-img">
             </div>
             <div class="who-name">
-              Robert Wąż
+              Elena
             </div>
             <div class="who-position">
-              Specjalista ds. rekrutacji
+              Patronka rekrutacji
             </div>
           </div>
         </div>
@@ -191,9 +237,9 @@
           <div class="no-offer-text mb-3">
             To tylko kilka z naszych zleceń.
           </div>
-          <div class="no-offer-subtext mb-4">Jeśli szukasz czegoś innego, nie ma sprawy!<br />Znajdziemy ofertę w sam raz dla Ciebie. Zgłoś się do nas,<br />a nasi Patroni Rekrutacji od razu zabiorą się za przeczesywanie bazy</div>
+          <div class="no-offer-subtext mb-4">Jeśli szukasz czegoś innego, nie ma sprawy!<br />Znajdziemy ofertę w sam raz dla Ciebie. Zgłoś się do nas,<br />a nasi Patroni Rekrutacji od razu zabiorą się za przeczesywanie bazy.</div>
           <div class="btn btn-no-offer">
-            Znajdź dla mnie ofertę
+            Znajdź ofertę dla mnie
           </div>
         </div>
       </div>
@@ -211,7 +257,7 @@
               Zgłoś się do nas
             </div>
             <div class="col-8 recruitment-process-text">
-              Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! Jak?<br />Jak tylko Ci wygodnie. 😉 Możesz <a href="tel:+48737932272">zadzwonić</a> i od razu podpytać Patronów o wszystko,<br />co Cię nurtuje, napisać do nas na <a href="https://wa.me/48357357863">WhatsAppie</a> lub <a href="#form1">wypełnić formularz zgłoszeniowy.</a>
+              Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! <b>Jak?<br />Jak tylko Ci wygodnie.</b> 😉 Możesz <a href="tel:+48737932272">zadzwonić</a> i od razu podpytać Patronów o wszystko,<br />co Cię nurtuje, napisać do nas na <a href="https://wa.me/48357357863">WhatsAppie</a> lub <a href="#form1">wypełnić formularz zgłoszeniowy.</a>
             </div>
           </div>
           <div class="row horizontal-line py-3">
@@ -227,7 +273,7 @@
               Porozmawiajmy
             </div>
             <div class="col-8 recruitment-process-text">
-              Patroni dzwonią do Ciebie i opowiadają o szczegółach. Chcemy, żebyś była jak najlepiej poinformowana o warunkach pracy i nie miała żadnych wątpliwości (oczywiście, jeśli się pojawią zawsze możesz do nas dzwonić 😉). Twój osobisty Patron pozna Twoje preferencje i umiejętności językowe. Następnie wyszuka zlecenie dostosowane specjalnie do Ciebie.
+              Patroni dzwonią do Ciebie i opowiadają o szczegółach. Chcemy, żebyś była jak najlepiej poinformowana o warunkach pracy i nie miała żadnych wątpliwości (oczywiście, jeśli się pojawią zawsze możesz do nas dzwonić 😉). <b>Twój osobisty Patron pozna Twoje preferencje i umiejętności językowe.</b> Następnie wyszuka zlecenie dostosowane specjalnie do Ciebie.
             </div>
           </div>
           <div class="row horizontal-line py-3">
@@ -240,10 +286,10 @@
               <div class="green-circle rounded-circle">3</div>
             </div>
             <div class="col-3 recruitment-process-title">
-              Mamy ofertę dla Ciebie
+              Mamy ofertę<br />dla Ciebie
             </div>
             <div class="col-8 recruitment-process-text">
-              Patron znajduje odpowiednie zlecenie i przedstawia Ci jego szczegóły. Opowiada, jaki jest podopieczny, jaki jest jego stan zdrowia, usposobienie, rodzina. Możesz zapytać o wszystko. Zależy nam, abyś przed wyjazdem miała pełną wiedzę na temat pracy. Wszystkie nasze zlecenia są zweryfikowane przez niemieckich partnerów, ale i Opiekunki. 😊
+              <b>Patron znajduje odpowiednie zlecenie i przedstawia Ci jego szczegóły.</b> Opowiada, jaki jest podopieczny, jaki jest jego stan zdrowia, usposobienie, rodzina. Możesz zapytać o wszystko. Zależy nam, abyś przed wyjazdem miała pełną wiedzę na temat pracy. <b>Wszystkie nasze zlecenia są zweryfikowane przez niemieckich partnerów, ale i Opiekunki.</b> 😊
             </div>
           </div>
           <div class="row horizontal-line py-3">
@@ -259,7 +305,7 @@
               Twoja akceptacja
             </div>
             <div class="col-8 recruitment-process-text">
-              Wybrałaś zlecenie, które Ci odpowiada? Świetnie. Teraz czas na podpisanie umowy. Patroni wyjaśnią Ci szczegółowo każdą stronę, wszystkie formalności i sposób rozliczeń. A co jest w tym najwygodniejsze? Umowę możesz podpisać online, w swoim domu!
+              <b>Wybrałaś zlecenie, które Ci odpowiada? Świetnie.</b> Teraz czas na podpisanie umowy. Patroni wyjaśnią Ci szczegółowo każdą stronę, wszystkie formalności i sposób rozliczeń. A co jest w tym najwygodniejsze? <b>Umowę możesz podpisać online, w swoim domu!</b>
             </div>
           </div>
           <div class="row horizontal-line py-3">
@@ -275,7 +321,7 @@
               No to jedziemy!
             </div>
             <div class="col-8 recruitment-process-text">
-              Dedykowany Tobie Patron wszystkim się zajmie – zorganizuje darmową podróż spod Twojego domu do podopiecznego, załatwi prywatne ubezpieczenie, udzieli wszystkich informacji.
+              <b>Dedykowany Tobie Patron wszystkim się zajmie</b> - zorganizuje darmową podróż spod Twojego domu do podopiecznego, załatwi prywatne ubezpieczenie, udzieli wszystkich informacji.
             </div>
           </div>
           <div class="row horizontal-line py-3">
@@ -291,7 +337,7 @@
               Wspieramy
             </div>
             <div class="col-8 recruitment-process-text">
-              Nie zostawimy Cię na zleceniu samej. Chcemy budować relację i dbać o Twój komfort. Dlatego Twój Patron będzie dzwonił do Ciebie w każdym tygodniu. To przestrzeń dla Ciebie – możesz poopowiadać, co słychać na zleceniu, jak się czujesz, o wszystkim, o czym tylko chcesz. Patron zawsze wysłucha i w razie potrzeby pomoże. Możesz do niego dzwonić również w inne dni, kiedy potrzebujesz pomocy lub tylko (albo aż) samej rozmowy. Przez całą dobę, 7 dni w tygodniu, w każde święto działa również nasza linia PN – linia Pomocy Nagłej. Jeśli zdarzy się coś, co wymaga naszej niezwłocznej ingerencji, dzwoń śmiało!
+              Nie zostawimy Cię na zleceniu samej. Chcemy budować relację i dbać o Twój komfort. Dlatego Twój Patron będzie dzwonił do Ciebie w każdym tygodniu. To przestrzeń dla Ciebie - możesz poopowiadać, co słychać na zleceniu, jak się czujesz, o wszystkim, o czym tylko chcesz. Patron zawsze wysłucha i w razie potrzeby pomoże. Możesz do niego dzwonić również w inne dni, kiedy potrzebujesz pomocy lub tylko (albo aż) samej rozmowy. <br /><br />Przez całą dobę, 7 dni w tygodniu, w każde święto działa również nasza <b>linia PN - linia Pomocy Nagłej.</b> Jeśli zdarzy się coś, co wymaga naszej niezwłocznej ingerencji, dzwoń śmiało!
             </div>
           </div>
         </div>
@@ -372,11 +418,11 @@
                       *Pola obowiązkowe
                     </div>
                     <div class="form-text">
-                      Informacje o przetwarzaniu Twoich danych osobowych znajdziesz tutaj.
+                      Twoje dane są bezpieczne. Informacje o przetwarzaniu Twoich danych osobowych znajdziesz tutaj.
                     </div>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary w-100">Wyślij wiadomość</button>
+                    <button type="submit" class="btn btn-primary btn-form w-100">Wyślij wiadomość</button>
                   </div>
                 </form>
               </div>
