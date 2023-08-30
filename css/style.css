@@ -101,6 +101,15 @@ a:active {
     font-size: 26px;
 }
 
+.navbar-toggler {
+    border: none;
+    color: var(--main-color-1);
+}
+
+.bg-body-tertiary {
+    background-color: #ffffff !important;
+}
+
 /* Form and bg photo */
 
 .form-bg-img {
@@ -360,6 +369,15 @@ a:active {
     border-radius: 10px;
 }
 
+.recruitment-box .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col-92px {
+    width: 92px;
+}
+
 .recruitment-text-title {
     font-size: 50px;
     color: var(--main-color-1);
@@ -399,16 +417,26 @@ hr {
     color: #B9D1CE;
     border-top: 2px solid;
     opacity: 1;
+    margin: 2rem 0;
 }
 
-.vr {
-    min-height: 40px;
-    opacity: 1;
-    color: var(--main-color-1);
-    width: 2px;
+.horizontal-line {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 55%;
+    border-left: 2px dashed var(--main-color-2);
 }
 
 /* Contact & Form */
+.display-inherit {
+    display: inherit;
+}
+
 .contact-detail-box {
     background-color: #D9E4E2;
     border-radius: 10px;
@@ -436,6 +464,7 @@ hr {
     color: var(--main-color-1);
     font-size: 22px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .contact-form-box {
@@ -567,6 +596,12 @@ hr {
     }
 }
 
+@media only screen and (max-width: 1399px) and (min-width: 1200px) {
+    .who-box-text {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .display-only-mobile-1 {
         display: none;
@@ -575,10 +610,6 @@ hr {
 
 @media only screen and (max-width: 1199px) {
     .display-only-pc-1 {
-        display: none;
-    }
-
-    .forms {
         display: none;
     }
 
@@ -592,5 +623,38 @@ hr {
 
     .logo-main {
         max-width: 228px;
+    }
+
+    .name-surname-row {
+        display: flex;
+    }
+
+    .forms {
+        top: 10px;
+        right: 10px;
+    }
+
+    .form-background .col-4 {
+        width: 52%;
+    }
+
+    .w-50-mobile {
+        width: 50%;
+    }
+
+    .form-background-text {
+        bottom: 10px;
+        left: 10px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .forms {
+        display: none;
+    }
+
+    .form-background-text {
+        display: none;
     }
 }
