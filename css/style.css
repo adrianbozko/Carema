@@ -131,8 +131,8 @@ a:active {
 
 .form-background-text {
     position: absolute;
-    bottom: 25px;
-    left: 25px;
+    bottom: 30px;
+    left: 30px;
     max-width: 493px;
 }
 
@@ -142,8 +142,8 @@ a:active {
 
 .forms {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    bottom: 30px;
+    right: 30px;
     background-color: #E6E6E6;
     border-radius: 10px;
     border: 2px solid #034E3F33;
@@ -645,11 +645,6 @@ hr {
         display: flex;
     }
 
-    .forms {
-        top: 10px;
-        right: 10px;
-    }
-
     .form-background .col-4 {
         width: 52%;
     }
@@ -658,9 +653,14 @@ hr {
         width: 50%;
     }
 
+    .forms {
+        bottom: 16px;
+        right: 16px;
+    }
+
     .form-background-text {
-        bottom: 10px;
-        left: 10px;
+        bottom: 16px;
+        left: 16px;
         width: 400px;
     }
 
@@ -692,12 +692,46 @@ hr {
         text-align: center;
     }
 
+    .gap_1_5_rem {
+        gap: 1.5rem;
+    }
 }
-
-
 
 @media (min-width: 576px) {
     .no-padding {
         padding: 0;
     }
+}
+
+@media (max-width: 577px) {
+
+    .who-title,
+    .recruitment-text-title,
+    .no-offer-text,
+    .contact-main-text,
+    .offers-main-text {
+        font-size: 26px;
+    }
+
+    .recruitment-process-title,
+    .green-circle {
+        font-size: 22px;
+    }
+
+    .contact-sub-text,
+    .contact-info-details {
+        font-size: 18px;
+    }
+
+    .who-description,
+    .no-offer-subtext,
+    .recruitment-process-text {
+        font-size: 16px
+    }
+
+    .contact-info-title {
+        font-size: 14px;
+    }
+
+
 }

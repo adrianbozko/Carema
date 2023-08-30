@@ -7,7 +7,7 @@
     <meta name="description" content="Site description">
     <meta name="keywords" content="Site keywords"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?version=2">
+    <link rel="stylesheet" href="css/style.css?version=4">
   </head>
   <body>
     <header>
@@ -63,19 +63,19 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-3 gap-3">
                   <li class="nav-item">
-                    <a class="nav-link hover-underline" href="#onas">O nas</a>
+                    <a class="nav-link hover-underline" href="#onas"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">O nas</button></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link hover-underline" href="#gwarantujemy">Co gwarantujemy?</a>
+                    <a class="nav-link hover-underline" href="#gwarantujemy"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Co gwarantujemy?</button></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link hover-underline" href="#oferty">Oferty pracy</a>
+                    <a class="nav-link hover-underline" href="#oferty"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Oferty pracy</button></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link hover-underline" href="#rekrutacja">Proces rekrutacji</a>
+                    <a class="nav-link hover-underline" href="#rekrutacja"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Proces rekrutacji</button></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link hover-underline" href="#kontakt">Kontakt</a>
+                    <a class="nav-link hover-underline" href="#kontakt" id="test">Kontakt</a>
                   </li>
                 </ul>
                 <div class="d-flex ">
@@ -149,9 +149,9 @@
       </div>
 
       <!-- Kim jesteśmy? -->
-
-      <div class="container mb-5 no-padding">
-        <div class="who-title mb-3" id="onas">
+      <div id="onas"></div>
+      <div class="container mb-5 no-padding" >
+        <div class="who-title mb-3">
           Kim jesteśmy?
         </div>
         <div class="who-description mb-5">
@@ -474,7 +474,7 @@
               <div class="p-5 contact-detail-box" id="kontakt">
                 <div class="row contact-main-text justify-content-center text-center">Jak się z nami skontaktować?</div>
               <div class="row contact-sub-text justify-content-center">Tak, jak Ci wygodnie!</div>
-              <div class="row my-4 direction-row-mobile">
+              <div class="row my-4 direction-row-mobile gap_1_5_rem">
                 <div class="col d-flex align-items-center direction-row-mobile">
                     <img src="images/phone_contact.png" class="img-fluid icon">
                   <div class="details">
@@ -490,7 +490,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row direction-row-mobile">
+              <div class="row direction-row-mobile gap_1_5_rem">
                 <div class="col d-flex align-items-center direction-row-mobile">
                     <img src="images/whatsapp_contact.png" class="img-fluid icon">
                   <div class="details">
@@ -610,6 +610,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        var myOffcanvas = document.getElementById('offcanvasNavbar');
+        var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+        document.getElementById("test").addEventListener('click',function (e){
+          e.preventDefault();
+          e.stopPropagation();
+          document.getElementById("kontakt").scrollIntoView();
+          bsOffcanvas.toggle();
+        });
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
