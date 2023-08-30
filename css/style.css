@@ -311,6 +311,17 @@ a:active {
     border: none;
 }
 
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color-2);
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
 
 /* What we offer? */
 .our-offer-box {
@@ -646,6 +657,10 @@ hr {
         bottom: 10px;
         left: 10px;
         width: 400px;
+    }
+
+    .who-team {
+        display: none;
     }
 }
 
