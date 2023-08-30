@@ -133,6 +133,11 @@ a:active {
     position: absolute;
     bottom: 25px;
     left: 25px;
+    max-width: 493px;
+}
+
+.mobile-form-background-text {
+    border-radius: 10px;
 }
 
 .forms {
@@ -664,12 +669,35 @@ hr {
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     .forms {
         display: none;
     }
 
     .form-background-text {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .mobile-form-background-text {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .direction-row-mobile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (min-width: 576px) {
+    .no-padding {
+        padding: 0;
     }
 }
