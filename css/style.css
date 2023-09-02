@@ -625,6 +625,10 @@ hr {
 }
 
 @media only screen and (max-width: 1199px) {
+    body {
+        padding-top: 80px;
+    }
+
     .display-only-pc-1 {
         display: none;
     }
@@ -634,7 +638,7 @@ hr {
     }
 
     .margin-bottom-mobile {
-        margin-bottom: 3rem !important;
+        margin-bottom: 2rem !important;
     }
 
     .logo-main {
@@ -669,7 +673,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .forms {
         display: none;
     }
@@ -677,11 +681,32 @@ hr {
     .form-background-text {
         display: none;
     }
+
+    .footer-logo {
+        display: none !important;
+    }
+
+    .gap_1_5_rem_md {
+        gap: 1.5rem;
+    }
+
+    .display-only-pc-2 {
+        display: none;
+    }
+
+    .line {
+        left: 40px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
 
     .mobile-form-background-text {
+        display: none;
+    }
+
+    .display-only-mobile-2 {
         display: none;
     }
 }
@@ -694,6 +719,20 @@ hr {
 
     .gap_1_5_rem {
         gap: 1.5rem;
+    }
+
+    .green-circle {
+        width: 3.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .line {
+        left: 27px;
+    }
+
+    .mb-5 {
+        margin-bottom: 2rem !important;
     }
 }
 
@@ -733,5 +772,9 @@ hr {
         font-size: 14px;
     }
 
-
+    .p-5 {
+        padding: 2rem !important;
+        padding-left: calc(var(--bs-gutter-x) * .5) !important;
+        padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    }
 }
