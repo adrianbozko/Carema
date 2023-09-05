@@ -334,6 +334,58 @@ a:active {
     border-radius: 10px;
 }
 
+.our-offer-text-box {
+    background-color: var(--extra-color-1);
+    border-radius: 10px;
+    padding: 0;
+    min-height: 367px;
+}
+
+.green-version-box {
+    background-color: var(--main-color-1);
+}
+
+.our-offer-img {
+    padding: 0;
+}
+
+.our-offer-main-text {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.our-offer-sub-text {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.btn-we-offer-1 {
+    border: 2px solid #ffffff;
+    border-radius: 47px;
+    color: var(--extra-color-1);
+    background-color: #FFFFFF;
+    padding: 17px 48px 17px 48px;
+}
+
+.btn-we-offer-1:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-we-offer-2 {
+    border: 2px solid var(--main-color-2);
+    border-radius: 47px;
+    color: #ffffff;
+    background-color: var(--main-color-2);
+    padding: 17px 48px 17px 48px;
+}
+
+.btn-we-offer-2:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
 
 /* Work offers */
 .offers-main-text {
