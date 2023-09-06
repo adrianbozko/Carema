@@ -652,6 +652,57 @@ hr {
     color: #ffffff;
 }
 
+/** Modals **/
+.modal-fullscreen {
+    height: auto;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-content {
+    background-color: #00000000;
+    border: none;
+}
+
+.btn-close {
+    opacity: 1;
+}
+
+.pink-modal {
+    background-color: var(--extra-color-1);
+    border-radius: 10px;
+}
+
+.green-modal {
+    background-color: var(--main-color-1);
+    border-radius: 10px;
+}
+
+.our-offer-modal-title {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.our-offer-text {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.our-offer-modal-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.modal-1-icon {
+    max-width: 56px;
+    max-height: 56px;
+    margin-right: 15px;
+}
+
 
 
 @media only screen and (max-width: 1399px) {
