@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+html {
+    scroll-padding-top: 80px;
+}
+
 :root {
     --main-color-1: #034E3F;
     --main-color-2: #01A88F;
@@ -659,6 +663,7 @@ hr {
 
 .modal-header {
     border-bottom: none;
+    padding: 0.5rem !important;
 }
 
 .modal-content {
@@ -703,6 +708,14 @@ hr {
     margin-right: 15px;
 }
 
+.modal-2-img-bg {
+    background-color: #225f52;
+    padding: 3rem 2rem;
+    height: 482px;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
 
 
 @media only screen and (max-width: 1399px) {
@@ -729,7 +742,7 @@ hr {
 
 @media only screen and (max-width: 1199px) {
     body {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 
     .display-only-pc-1 {
