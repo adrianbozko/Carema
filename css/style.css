@@ -386,6 +386,14 @@ a:active {
     padding-right: 7rem !important;
 }
 
+.owl-dots {
+    margin-top: 20px;
+}
+
+.owl-dot {
+    background: red;
+}
+
 
 /* What we offer? */
 .our-offer-box {
@@ -792,6 +800,28 @@ hr {
     padding-top: 1rem;
 }
 
+.close-button-container {
+    display: flex;
+    top: 20px;
+}
+
+.top-fix {
+    top: 20px;
+}
+
+.btn-close-mobile {
+    position: relative;
+    top: 28px;
+    right: -20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+}
+
+.btn-close-mobile:hover {
+    opacity: 1;
+}
+
 @media only screen and (min-width: 1400px) {}
 
 
@@ -846,7 +876,7 @@ hr {
     }
 
     .display-only-pc-1 {
-        display: none;
+        display: none !important;
     }
 
     .no-padding-right-mobile {
