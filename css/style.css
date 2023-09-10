@@ -24,8 +24,9 @@ a,
 a:link,
 a:visited,
 a:active {
-    text-decoration: none;
-    color: #ffffff;
+    text-decoration: none !important;
+    color: var(--main-color-1);
+    -moz-text-decoration-style: none;
 }
 
 .btn {
@@ -84,16 +85,10 @@ a:active {
     transform-origin: bottom left;
 }
 
-a,
-a:link,
-a:visited,
-a:active {
-    text-decoration: none;
-}
-
 .btn-contact {
     padding: 18px 48px 18px 48px;
     border-radius: 47px;
+    color: #ffffff !important;
 }
 
 .btn-contact:hover {
@@ -105,14 +100,33 @@ a:active {
     color: var(--main-color-1);
 }
 
+.offcanvas-header .btn-close:focus {
+    box-shadow: none;
+}
+
+.modal-header .btn-close:focus {
+    box-shadow: none;
+}
+
 .offcanvas-body .nav-link {
     font-size: 26px;
 }
 
 .navbar-toggler {
     border: none;
-    color: var(--main-color-1);
+    padding: 0;
 }
+
+.navbar-toggler-icon {
+    border: none;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%2803, 78, 63, 0.99%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
 
 .bg-body-tertiary {
     background-color: #ffffff !important;
@@ -144,7 +158,8 @@ a:active {
     max-width: 493px;
 }
 
-.mobile-form-background-text {
+.mobile-form-background-text,
+.mobile-form-background-text-medium {
     border-radius: 10px;
 }
 
@@ -260,7 +275,6 @@ a:active {
     border-color: var(--main-color-1);
 }
 
-
 /* Who section */
 .who-title,
 .who-description,
@@ -324,6 +338,10 @@ a:active {
     border: none;
 }
 
+.img-who {
+    max-height: 354px;
+}
+
 .carousel-indicators [data-bs-target] {
     width: 10px;
     height: 10px;
@@ -333,6 +351,11 @@ a:active {
 
 .carousel-indicators {
     bottom: -50px;
+    margin-top: 2rem !important;
+}
+
+#carouselTeam {
+    margin-bottom: 5rem;
 }
 
 
@@ -357,7 +380,7 @@ a:active {
 .owl-nav {
     height: 0px;
     z-index: 15 !important;
-    display: none;
+    /* display: none; */
 }
 
 .owl-prev,
@@ -367,6 +390,13 @@ a:active {
     border-radius: 100% !important;
     background-color: #c2d0c7 !important;
     opacity: 1;
+}
+
+.owl-next span,
+.owl-prev span {
+    font-size: 50px !important;
+    line-height: 28px !important;
+    color: var(--main-color-1);
 }
 
 .owl-next {
@@ -389,11 +419,6 @@ a:active {
 .owl-dots {
     margin-top: 20px;
 }
-
-.owl-dot {
-    background: red;
-}
-
 
 /* What we offer? */
 .our-offer-box {
@@ -547,7 +572,7 @@ a:active {
 .recruitment-process-text a {
     color: var(--extra-color-1);
     font-weight: 700;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 hr {
@@ -727,6 +752,13 @@ hr {
     color: #ffffff;
 }
 
+footer a,
+footer a:link,
+footer a:visited,
+footer a:active {
+    color: #ffffff;
+}
+
 /** Modals **/
 .modal-fullscreen {
     height: auto;
@@ -849,6 +881,14 @@ hr {
     .modal-4-col-fix {
         width: 31%;
     }
+
+    .owl-next {
+        right: -460px;
+    }
+
+    .owl-prev {
+        left: -460px;
+    }
 }
 
 @media only screen and (max-width: 1399px) and (min-width: 1200px) {
@@ -893,6 +933,7 @@ hr {
 
     .name-surname-row {
         display: flex;
+        gap: 20px;
     }
 
     .form-background .col-4 {
@@ -932,6 +973,18 @@ hr {
 
     .pb-3rem {
         padding-bottom: 3rem !important;
+    }
+
+    .pt-3rem {
+        padding-top: 3rem !important;
+    }
+
+    .owl-next {
+        right: -375px;
+    }
+
+    .owl-prev {
+        left: -375px;
     }
 }
 
@@ -978,20 +1031,42 @@ hr {
         margin-top: 2rem;
     }
 
+    .owl-next {
+        right: -255px;
+    }
+
+    .owl-prev {
+        left: -255px;
+    }
+
+    .center-text-mobile {
+        text-align: center;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
-
-    .mobile-form-background-text {
+    .display-only-mobile-2 {
         display: none;
     }
 
-    .display-only-mobile-2 {
+    .mobile-form-background-text-medium {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-form-background-text {
         display: none;
     }
 }
 
 @media (max-width: 767px) {
+    .mobile-form-background-text-medium {
+        display: none;
+    }
+
     .direction-row-mobile {
         flex-direction: column;
         text-align: center;
@@ -1018,6 +1093,29 @@ hr {
     #gwarantujemy {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
+    }
+
+    .owl-next,
+    .owl-prev {
+        background-color: var(--main-color-2) !important;
+        border: 4px solid #ffffff !important;
+    }
+
+    .owl-next span,
+    .owl-prev span {
+        font-size: 50px !important;
+        line-height: 28px !important;
+        color: #ffffff;
+    }
+
+    .owl-next {
+        right: -164px;
+        top: -427px;
+    }
+
+    .owl-prev {
+        left: -164px;
+        top: -427px;
     }
 }
 
@@ -1070,5 +1168,26 @@ hr {
 
     .our-offer-text-box {
         min-height: 350px;
+    }
+
+    .owl-next,
+    .owl-prev {
+        height: 50px;
+        width: 50px;
+    }
+
+    .owl-next {
+        right: -37%;
+        top: -447px;
+    }
+
+    .owl-prev {
+        left: -37%;
+        top: -447px;
+    }
+
+    .modal .px-5 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 }

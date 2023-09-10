@@ -7,14 +7,14 @@
     <meta name="description" content="Site description">
     <meta name="keywords" content="Site keywords"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?version=7">
+    <link rel="stylesheet" href="css/style.css?version=9">
     <link rel="stylesheet" href="src/owl.carousel.min.css">
-    <link rel="stylesheet" href="src/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/owl.theme.default.min.css?version=1">
 
   </head>
   <body>
-    <header>
-        <div class="container display-only-pc-1" id="top">
+    <header id="top">
+        <div class="container display-only-pc-1">
             <div class="row clearfix align-items-center">
                 <div class="col-md-2">
                     <div class="logo">
@@ -130,8 +130,18 @@
                   <div class="mb-3 range-wrap">
                     <label for="experienceRange" class="form-label">Doświadczenie jako Opiekunka</label>
                     <input type="range" class="form-range range-cust" min="0" max="5" id="experienceRange">
-                    <output class="bubble"></output>
+                    <div class="range-text">
+                      <div class="row d-flex" style="width: 117%; margin-top: 10px;">
+                        <div class="col">0</div>
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                        <div class="col">3</div>
+                        <div class="col">4</div>
+                        <div class="col">5+</div>
+                      </div>
+                    </div>
                   </div>
+                  
                   <div class="mb-3">
                     <div class="form-text">
                       *Pola obowiązkowe
@@ -146,6 +156,9 @@
                 </form>
               </div>
             </div>
+      </div>
+      <div class="container mb-5 no-padding">
+        <img class="img-fluid mobile-form-background-text-medium" src="images/form_text_mobile_old.png"/>
       </div>
       <div class="container mb-5 no-padding">
         <img class="img-fluid mobile-form-background-text" src="images/form_text_mobile.png"/>
@@ -242,7 +255,7 @@
 
       <!-- Kim jesteśmy? - MOBILE -->
       <div id="onas"></div>
-      <div id="carouselTeam" class="carousel slide mb-5 display-only-mobile-1 pointer-event" data-bs-ride="carousel">
+      <div id="carouselTeam" class="carousel slide display-only-mobile-1 pointer-event" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -254,7 +267,7 @@
           <div class="carousel-item active">
             <div class="d-block w-100 text-center">
               <div class="btn btn-who-1 mb-2">
-                <img src="images/team_1.png" class="img-fluid">
+                <img src="images/team_1.png" class="img-fluid img-who">
                 <div class="who-box-text">
                   W świecie opiekuńczym od 5 lat. Jego marzeniem jest, aby CAREMA była oparta na relacjach i tworzyła społeczność zadowolonych kobiet. Stojąc na czele CAREMY będzie do tego konsekwentnie dążył.
                 </div>
@@ -270,7 +283,7 @@
           <div class="carousel-item">
             <div class="d-block w-100 text-center">
               <div class="btn btn-who-1 mb-2">
-                <img src="images/team_2.png" class="img-fluid">
+                <img src="images/team_2.png" class="img-fluid img-who">
                 <div class="who-box-text">
                   Rozmowa z Klaudią to czysta przyjemność. Przeprowadzi Cię na spokojnie przez cały proces aplikacji. Porozmawia z Tobą po niemiecku i dopasuje zlecenie. Przy niej nie musisz się stresować rekrutacją. 😉
                 </div>
@@ -286,7 +299,7 @@
           <div class="carousel-item">
             <div class="d-block w-100 text-center">
               <div class="btn btn-who-1 mb-2">
-                <img src="images/team_3.png" class="img-fluid">
+                <img src="images/team_3.png" class="img-fluid img-who">
                 <div class="who-box-text">
                   Masz sprecyzowane preferencje odnośnie zlecenia? Daria się tym zajmie! Dopasowanie to jej drugie imię. Przeczesze całą bazę, aby znaleźć ofertę w sam raz dla Ciebie!
                 </div>
@@ -302,7 +315,7 @@
           <div class="carousel-item">
             <div class="d-block w-100 text-center">
               <div class="btn btn-who-1 mb-2">
-                <img src="images/team_4.png" class="img-fluid">
+                <img src="images/team_4.png" class="img-fluid img-who">
                 <div class="who-box-text">
                   Organizacja i cierpliwość to jego drugie imię. Z chęcią wyjaśni Ci każdy paragraf umowy, organizację podróży. A jeśli zapytasz, na pewno równie chętnie sprawdzi, co możesz pozwiedzać w okolicy zlecenia. 😊
                 </div>
@@ -318,7 +331,7 @@
           <div class="carousel-item">
             <div class="d-block w-100 text-center">
               <div class="btn btn-who-1 mb-2">
-                <img src="images/team_5.png" class="img-fluid">
+                <img src="images/team_5.png" class="img-fluid img-who">
                 <div class="who-box-text">
                   Główny cel naszych Patronów to Twoje zadowolenie. Ze strony Eleny możesz zawsze liczyć na życzliwość. Poświęci Ci tyle czasu, ile tylko potrzebujesz, aby dowiedzieć się wszystkiego o zleceniu i podopiecznym.
                 </div>
@@ -350,7 +363,7 @@
                       <img src="images/offer_1.jpg" class="our-offer-img">
                     </div>
                     <div class="row">
-                      <div class="our-offer-text-box d-flex flex-wrap align-content-between p-4">
+                      <div class="our-offer-text-box d-flex flex-wrap align-content-between p-4 center-text-mobile">
                           <div class="our-offer-main-text mb-3">Premie, nie tylko sezonowe</div>
                           <div class="our-offer-sub-text mb-3">Wiadomo, pieniądze to nie wszystko, ale bez pieniędzy… jest ciężko. 😉<br />
                             Robimy co w naszej mocy, negocjujemy z rodzinami, szukamy możliwości, aby już Twoje podstawowe wynagrodzenie było satysfakcjonują...
@@ -371,7 +384,7 @@
                       <img src="images/offer_2.jpg" class="our-offer-img">
                     </div>
                     <div class="row">
-                      <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4">
+                      <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4 center-text-mobile">
                           <div class="our-offer-main-text mb-3">Zlecenia zweryfikowane przez opiekunki</div>
                           <div class="our-offer-sub-text mb-3">U nas masz gwarancję sprawdzonych ofert. Nasi konsultanci w Niemczech weryfikują stan zdrowia i miejsce zamieszkania podopiecznych. Co więcej...
                           </div>
@@ -391,7 +404,7 @@
                       <img src="images/offer_3.jpg" class="our-offer-img">
                     </div>
                     <div class="row">
-                      <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4">
+                      <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4 center-text-mobile">
                           <div class="our-offer-main-text mb-3">Patroni - Twoje realne wsparcie</div>
                           <div class="our-offer-sub-text mb-3">
                             Wszystkie agencje opiekuńcze obiecują kontakt koordynatorów na zleceniu. Później dzwonią raz, sprawdzić, czy dotarłaś i…
@@ -411,7 +424,7 @@
                       <img src="images/offer_4.jpg" class="our-offer-img">
                     </div>
                     <div class="row">
-                      <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4">
+                      <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4 center-text-mobile">
                           <div class="our-offer-main-text mb-3">Bezpieczeństwo ponad wszystko</div>
                           <div class="our-offer-sub-text mb-3">
                             Twój komfort to nasz priorytet. Co składa się na spokojny i bezpieczny wyjazd? Otoczymy Cię wsparciem Patronów, sprawdzimy zlecenie, zapewnimy prywatne ubezpieczenie zdrowotne...
@@ -691,14 +704,14 @@
                     <img src="images/phone_contact.png" class="img-fluid icon">
                   <div class="details">
                     <div class="contact-info-title">Zadzwoń:</div>
-                    <div class="contact-info-details">+48 737 932 272</div>
+                    <div class="contact-info-details"><a href="tel:+48737932272">+48 737 932 272</a></div>
                   </div>
                 </div>
                 <div class="col d-flex align-items-center direction-row-mobile">
                     <img src="images/fb_contact.png" class="img-fluid icon">
                   <div class="details">
                     <div class="contact-info-title">Napisz na Messengerze:</div>
-                    <div class="contact-info-details">Facebook: CAREMA</div>
+                    <div class="contact-info-details"><a href="www.facebook.com" target="_blank">Facebook: CAREMA</a></div>
                   </div>
                 </div>
               </div>
@@ -707,14 +720,14 @@
                     <img src="images/whatsapp_contact.png" class="img-fluid icon">
                   <div class="details">
                     <div class="contact-info-title">Skorzystaj z WhatsAppa:</div>
-                    <div class="contact-info-details">+48 357 357 863</div>
+                    <div class="contact-info-details"><a href="https://wa.me/48357357863">+48 357 357 863</a></div>
                   </div>
                 </div>
                 <div class="col d-flex align-items-center direction-row-mobile">
                     <img src="images/mail_contact.png" class="img-fluid icon">
                   <div class="details">
                     <div class="contact-info-title">Wyślij maila:</div>
-                    <div class="contact-info-details">rekrutacja@carema.pl</div>
+                    <div class="contact-info-details"><a href="mailto:rekrutacja@carema.pl">rekrutacja@carema.pl</a></div>
                   </div>
                 </div>
               </div>
@@ -742,7 +755,7 @@
                     </div>
                     <div class="mb-2">
                       <label for="email1" class="form-label">Mail*</label>
-                      <input type="email" class="form-control" id="email1" name="email1" minlength="9" placeholder="Wpisz swój adres e-mail" required>
+                      <input type="email" class="form-control" id="email1" name="email1" placeholder="Wpisz swój adres e-mail" required>
                     </div>
                     <div class="mb-2">
                       <label for="Textarea1" class="form-label">Twoja wiadomość</label>
@@ -787,7 +800,7 @@
               </div>
               <div class="row align-items-center mt-3">
                 <div class="col-2"><img src="images/facebook.png" class="img-fluid" style="max-width: 24px;"></div>
-                <div class="col-10 footer-contact-subtext"><a href="www.facebook.com">Carema</a></div>
+                <div class="col-10 footer-contact-subtext"><a href="www.facebook.com" target="_blank">Carema</a></div>
               </div>
             </div>
             <div class="col-lg-5">
@@ -838,10 +851,10 @@
               <div class="col-xl display-only-mobile-1 no-padding-left no-padding-right pb-3">
                 <img src="images/offer_1.jpg" class="img-fluid radius-10">
               </div>
-              <div class="col-xl pink-modal px-5 py-3 pb-3rem">
+              <div class="col-xl pink-modal px-5 py-3 pb-3rem pt-3rem">
                 <div class="modal-header display-only-pc-1"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="our-offer-modal-title pb-2">Premie, nie tylko sezonowe</div>
-                <div class="our-offer-text pb-3">
+                <div class="our-offer-modal-title pb-2 center-text-mobile">Premie, nie tylko sezonowe</div>
+                <div class="our-offer-text pb-3 center-text-mobile">
                   Wiadomo, pieniądze to nie wszystko, ale bez pieniędzy… jest ciężko. 😉<br />Robimy co w naszej mocy, negocjujemy z rodzinami, szukamy możliwości, aby już Twoje podstawowe wynagrodzenie było satysfakcjonujące. Jednak to nie wszystko. <b>Doceniamy Twoją pracę, dlatego przez cały rok czekają na Ciebie bonusy.</b> Jakie?
                 </div>
                 <div class="row direction-row-mobile">
@@ -907,7 +920,7 @@
               <div class="col-xl display-only-mobile-1 no-padding-left no-padding-right pb-3">
                 <img src="images/offer_2.jpg" class="img-fluid radius-10">
               </div>
-              <div class="col-xl green-modal px-5 py-3 pb-3rem">
+              <div class="col-xl green-modal px-5 py-3 pb-3rem pt-3rem">
                 <div class="modal-header display-only-pc-1"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="row direction-row-mobile-991">
                   <div class="col">
@@ -953,10 +966,10 @@
               <div class="col-xl display-only-mobile-1 no-padding-left no-padding-right pb-3">
                 <img src="images/offer_3.jpg" class="img-fluid radius-10">
               </div>
-              <div class="col-xl green-modal px-5 py-3 pb-3rem">
+              <div class="col-xl green-modal px-5 py-3 pb-3rem pt-3rem">
                 <div class="modal-header display-only-pc-1"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="row">
-                  <div class="col-9 full-width">
+                  <div class="col-9 full-width center-text-mobile">
                     <div class="our-offer-modal-title pb-2">Patroni - realne wsparcie</div>
                     <div class="our-offer-text pb-2">
                       Wszystkie agencje opiekuńcze obiecują kontakt koordynatorów na zleceniu. Później dzwonią raz, sprawdzić, czy dotarłaś i… tyle. <b>My nie mamy zwykłych koordynatorów - mamy Patronów.</b> Nie chcemy tylko zgrywać Twojego zlecenia. Patron robi coś więcej - czuwa nad Tobą i jest Twoim wsparciem w każdej sytuacji. Rozmowa z Tobą to dla nas rzecz najważniejsza.
@@ -994,12 +1007,12 @@
               <div class="col-xl display-only-mobile-1 no-padding-left no-padding-right pb-3">
                 <img src="images/offer_4.jpg" class="img-fluid radius-10">
               </div>
-              <div class="col-xl green-modal px-5 py-3 pb-3rem">
+              <div class="col-xl green-modal px-5 py-3 pb-3rem pt-3rem">
                 <div class="modal-header display-only-pc-1">
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="row pb-4">
-                  <div class="col-10 full-width">
+                  <div class="col-10 full-width center-text-mobile">
                     <div class="our-offer-modal-title pb-2">Bezpieczeństwo ponad wszystko</div>
                     <div class="our-offer-text pb-2">
                       Twój komfort to nasz priorytet. Co składa się na spokojny i bezpieczny wyjazd?
@@ -1008,11 +1021,11 @@
                       Otoczymy Cię wsparciem Patronów, sprawdzimy zlecenie, zapewnimy prywatne ubezpieczenie zdrowotne i bezpłatny dojazd spod Twojego domu na miejsce zlecenia. To jednak nie wszystko. 
                     </div>
                     <div class="our-offer-text pb-2">
-                      Podstawą bezpieczeństwa jest wiedza. Chcemy, żebyś wiedziała, jak najwięcej o podopiecznym, ale i o formalnościach! Umowa, rozliczenia, zus, składki… Wszystko Ci wyjaśnimy!
+                      <b>Podstawą bezpieczeństwa jest wiedza.</b> Chcemy, żebyś wiedziała, jak najwięcej o podopiecznym, ale i o formalnościach! Umowa, rozliczenia, zus, składki… <b>Wszystko Ci wyjaśnimy!</b>
                     </div>
                     <div class="our-offer-text">
                       Potrzebujesz 15 minut, żeby zrozumieć formalności? Super. A może 2 godzin, bo chcesz być pewna każdego zapisu? Nie ma sprawy. Będziemy rozmawiać z Tobą tak długo, jak potrzebujesz. 
-                      <br />Jesteśmy po to, aby odpowiedzieć na wszystkie Twoje pytania.
+                      <br /><b>Jesteśmy po to, aby odpowiedzieć na wszystkie Twoje pytania.</b>
                     </div>
                   </div>
                 </div>
