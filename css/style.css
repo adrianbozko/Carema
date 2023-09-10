@@ -43,6 +43,10 @@ a:active {
     padding-right: 0px
 }
 
+.radius-10 {
+    border-radius: 10px;
+}
+
 /* Nav */
 
 .nav-item a {
@@ -332,6 +336,57 @@ a:active {
 }
 
 
+/* Owl Carousel */
+
+.gradient {
+    background: rgb(240, 240, 232);
+    background: linear-gradient(90deg, rgba(240, 240, 232, 0) 0%, rgba(240, 240, 232, 1) 50%);
+    z-index: 10 !important;
+    position: absolute;
+    height: 100%;
+    width: 23%;
+    max-height: 680px;
+    right: 110px;
+    display: none;
+}
+
+.owl-carousel {
+    z-index: 5 !important;
+}
+
+.owl-nav {
+    height: 0px;
+    z-index: 15 !important;
+    display: none;
+}
+
+.owl-prev,
+.owl-next {
+    height: 74px;
+    width: 74px;
+    border-radius: 100% !important;
+    background-color: #c2d0c7 !important;
+    opacity: 1;
+}
+
+.owl-next {
+    position: relative;
+    right: -544px;
+    top: -380px;
+}
+
+.owl-prev {
+    position: relative;
+    left: -544px;
+    top: -380px;
+}
+
+#gwarantujemy {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+}
+
+
 /* What we offer? */
 .our-offer-box {
     background-color: #F0F0E8;
@@ -351,6 +406,7 @@ a:active {
 
 .our-offer-img {
     padding: 0;
+    border-radius: 10px;
 }
 
 .our-offer-main-text {
@@ -455,6 +511,7 @@ a:active {
     color: var(--main-color-1);
     font-weight: 700;
     text-align: center;
+    z-index: 15 !important;
 }
 
 .green-circle {
@@ -502,6 +559,12 @@ hr {
     bottom: 0;
     left: 55%;
     border-left: 2px dashed var(--main-color-2);
+}
+
+.height-fix {
+    max-height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 /* Contact & Form */
@@ -706,6 +769,7 @@ hr {
     max-width: 56px;
     max-height: 56px;
     margin-right: 15px;
+    margin-bottom: 1rem;
 }
 
 .modal-2-img-bg {
@@ -716,6 +780,19 @@ hr {
     margin: 0 20px;
 }
 
+.modal-4-icons img {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.modal-4-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+@media only screen and (min-width: 1400px) {}
 
 
 @media only screen and (max-width: 1399px) {
@@ -725,6 +802,22 @@ hr {
 
     .form-background .col-4 {
         width: 45%;
+    }
+
+    .our-offer-text-box {
+        min-height: 440px;
+    }
+
+    .modal-1-col-fix {
+        width: 51.2%;
+    }
+
+    .modal-2-col-fix {
+        width: 41.8%;
+    }
+
+    .modal-4-col-fix {
+        width: 31%;
     }
 }
 
@@ -737,6 +830,13 @@ hr {
 @media only screen and (min-width: 1200px) {
     .display-only-mobile-1 {
         display: none;
+    }
+
+    .modal-fullscreen-own {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        margin: 0;
     }
 }
 
@@ -787,6 +887,22 @@ hr {
     .who-team {
         display: none;
     }
+
+    .our-offer-text-box {
+        min-height: 368px;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .modal-4-row .col-2 {
+        width: 20%;
+    }
+
+    .pb-3rem {
+        padding-bottom: 3rem !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -812,6 +928,24 @@ hr {
 
     .line {
         left: 40px;
+    }
+
+    .direction-row-mobile-991 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-item-991 {
+        align-items: center;
+    }
+
+    .full-width-991 {
+        width: 100%;
+    }
+
+    .modal-2-img-bg {
+        height: auto;
+        margin-top: 2rem;
     }
 
 }
@@ -849,6 +983,11 @@ hr {
 
     .mb-5 {
         margin-bottom: 2rem !important;
+    }
+
+    #gwarantujemy {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
     }
 }
 
@@ -892,5 +1031,14 @@ hr {
         padding: 2rem !important;
         padding-left: calc(var(--bs-gutter-x) * .5) !important;
         padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    }
+
+    #gwarantujemy {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .our-offer-text-box {
+        min-height: 350px;
     }
 }
