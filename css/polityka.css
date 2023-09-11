@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #575756;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container-own {
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-height: 10rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #034E3F;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+}
+
+.button-own {
+    display: inline-block;
+    padding: 18px 48px 18px 48px;
+    margin: 20px 0px;
+    cursor: pointer;
+    background: #01A88F;
+    color: #fff;
+    border-radius: 47px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button-own:hover {
+    background-color: #034E3F;
+}
+
+/* Nav */
+
+.nav-item a {
+    color: #393939;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #393939;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: #01A88F;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 6px;
+    left: 0;
+    background-color: #01A88F;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btn-contact {
+    padding: 18px 48px 18px 48px;
+    border-radius: 47px;
+    color: #ffffff !important;
+    background-color: #01A88F;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-contact:hover {
+    background-color: #034E3F;
+    color: #ffffff;
+}
+
+.offcanvas-header .btn-close {
+    color: #034E3F;
+}
+
+.offcanvas-header .btn-close:focus {
+    box-shadow: none;
+}
+
+.modal-header .btn-close:focus {
+    box-shadow: none;
+}
+
+.offcanvas-body .nav-link {
+    font-size: 26px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    border: none;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%2803, 78, 63, 0.99%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.bg-body-tertiary {
+    background-color: #ffffff !important;
+}
+
+/** Body **/
+.main-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #034E3F;
+}
+
+.sub-text {
+    font-size: 22x;
+    color: #606060;
+}
+
+.polityka {
+    background-color: #F0F0E8;
+    border-radius: 10px;
+}
+
+.polityka a,
+.polityka a:link,
+.polityka a:visited,
+.polityka a:active {
+    text-decoration: none !important;
+    /** color: #D4318A; **/
+    color: #383838;
+    -moz-text-decoration-style: none;
+    text-decoration-style: none;
+    font-weight: 700;
+}
+
+hr {
+    color: #B9D1CE;
+    border-top: 2px solid;
+    opacity: 1;
+    margin: 2rem 0;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .display-only-mobile-1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .display-only-pc-1 {
+        display: none !important;
+    }
+
+    .logo-main {
+        max-width: 228px;
+    }
+
+    body {
+        margin-top: 80px;
+    }
+}
