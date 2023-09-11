@@ -27,6 +27,7 @@ a:active {
     text-decoration: none !important;
     color: var(--main-color-1);
     -moz-text-decoration-style: none;
+    text-decoration-style: none;
 }
 
 .btn {
@@ -287,6 +288,11 @@ a:active {
     text-align: center;
 }
 
+.who-team img {
+    border-radius: 196px;
+    border: 2px solid #0000001A;
+}
+
 .who-title {
     color: var(--main-color-1);
     font-size: 40px;
@@ -358,10 +364,21 @@ a:active {
     margin-top: 2rem !important;
 }
 
+.carousel-inner .img-who {
+    border-radius: 196px;
+    border: 2px solid #0000001A;
+}
+
 #carouselTeam {
     margin-bottom: 5rem;
 }
 
+.klik-icon {
+    position: absolute;
+    bottom: -20px;
+    right: -33px;
+    z-index: 100;
+}
 
 /* Owl Carousel */
 
@@ -759,7 +776,8 @@ hr {
 footer a,
 footer a:link,
 footer a:visited,
-footer a:active, .footer-pink-box a,
+footer a:active,
+.footer-pink-box a,
 .footer-pink-box a:link,
 .footer-pink-box a:visited,
 .footer-pink-box a:active {
