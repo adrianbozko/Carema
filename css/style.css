@@ -273,6 +273,12 @@ a:active {
     border-color: var(--main-color-1);
 }
 
+/** Buttom Aplikuj */
+
+.btn-aplikuj {
+    padding: 18px 48px 18px 48px;
+}
+
 /* Who section */
 .who-title,
 .who-description,
@@ -753,9 +759,13 @@ hr {
 footer a,
 footer a:link,
 footer a:visited,
-footer a:active {
+footer a:active, .footer-pink-box a,
+.footer-pink-box a:link,
+.footer-pink-box a:visited,
+.footer-pink-box a:active {
     color: #ffffff;
 }
+
 
 /** Modals **/
 .modal-fullscreen {
