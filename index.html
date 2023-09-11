@@ -479,9 +479,7 @@
               To tylko kilka z naszych zleceń.
             </div>
             <div class="no-offer-subtext mb-4">Jeśli szukasz czegoś innego, nie ma sprawy!<br />Znajdziemy ofertę w sam raz dla Ciebie. Zgłoś się do nas,<br />a nasi Patroni Rekrutacji od razu zabiorą się za przeczesywanie bazy.</div>
-            <div class="btn btn-no-offer">
-              Znajdź ofertę dla mnie
-            </div>
+            <button type="button" class="btn btn-no-offer" data-bs-toggle="modal" data-bs-target="#form-modal-desktop">Znajdź ofertę dla mnie</button>
           </div>
         </div>
       </div>
@@ -500,7 +498,7 @@
                 Zgłoś się do nas
               </div>
               <div class="col-8 recruitment-process-text">
-                Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! <b>Jak?<br />Jak tylko Ci wygodnie.</b> 😉 Możesz <a href="tel:+48737932272">zadzwonić</a> i od razu podpytać Patronów o wszystko,<br />co Cię nurtuje, napisać do nas na <a href="https://wa.me/48357357863">WhatsAppie</a> lub <a href="#form1">wypełnić formularz zgłoszeniowy.</a>
+                Myślisz o wyjeździe do pracy, szukasz odpowiedniego zlecenia? Daj nam znać! <b>Jak?<br />Jak tylko Ci wygodnie.</b> 😉 Możesz <a href="tel:+48737932272">zadzwonić</a> i od razu podpytać Patronów o wszystko,<br />co Cię nurtuje, napisać do nas na <a href="https://wa.me/48357357863">WhatsAppie</a> lub <a href="#form1" data-bs-toggle="modal" data-bs-target="#form-modal-desktop">wypełnić formularz zgłoszeniowy.</a>
               </div>
             </div>
             <div class="row py-2">
@@ -786,7 +784,7 @@
                         *Pola obowiązkowe
                       </div>
                       <div class="form-text">
-                        Twoje dane są bezpieczne. Informacje o przetwarzaniu Twoich danych osobowych znajdziesz tutaj.
+                        Twoje dane są bezpieczne. Informacje o przetwarzaniu Twoich danych osobowych <a href="https://bozko.toadres.pl/carema/klauzulainformacyjna.pdf" target="_blank">znajdziesz tutaj.</a>
                       </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -854,7 +852,7 @@
             </div>
             <div class="col-lg-3">
               <div class="footer-contact-buttons vstack gap-3 flex-wrap">
-                <div class="btn btn-footer-1">Aplikuj</div>
+                <button type="button" class="btn btn-footer-1" data-bs-toggle="modal" data-bs-target="#form-modal-desktop">Aplikuj</button>
                 <a class="btn btn-footer-2" role="button" href="tel:+48735995060">Zadzwoń do nas</a>
               </div>
             </div>
@@ -1137,6 +1135,92 @@
                   </div>
                 </div>
             </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Form Modal Version -->
+    <div class="modal" id="form-modal-desktop" tabindex="-1" aria-labelledby="Formularz zgłoszeniowy" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="container no-padding">
+            <div class="forms-title text-center">Wypełnij formularz</div>
+                <div class="forms-subtitle text-center">Znajdziemy dla Ciebie pracę!</div>
+                <form action="form_popup.php" method="POST" class="form-1 needs-validation" novalidate>
+                    <div class="mb-4 position-relative">
+                      <label for="name_popup" class="form-label">Imię*</label>
+                      <input type="text" class="form-control" id="name_popup" name="name_popup" placeholder="Anna" required>
+                      <div class="invalid-tooltip">
+                        Wpisz swoje imię
+                      </div>
+                    </div>
+                    <div class="mb-3 position-relative">
+                      <label for="surname_popup" class="form-label">Nazwisko*</label>
+                      <input type="text" class="form-control" id="surname_popup" name="surname_popup" placeholder="Kowalska" required>
+                      <div class="invalid-tooltip">
+                        Wpisz swoje nazwisko
+                      </div>
+                    </div>
+                  <div class="mb-3 position-relative">
+                    <label for="phone_popup" class="form-label">Telefon*</label>
+                    <input type="tel" class="form-control" id="phone_popup" name="phone_popup" minlength="9" pattern="[0-9]*" placeholder="123456789" required>
+                    <div class="invalid-tooltip">
+                      Niepoprawny numer
+                    </div>
+                  </div>
+                  <label for="checki_popup" class="form-label">Znajomość języka niemiekiego</label>
+
+                  <div class="mb-3 d-flex justify-content-around checki_popup row-cols-2">
+                    <div class="col-auto">
+                      <input type="radio" class="btn-check" id="btn-nieznam_popup" name="language_level_popup" autocomplete="off" value="Nie znam">
+                      <label class="btn btn-form-check" for="btn-nieznam_popup">Nie znam</label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="radio" class="btn-check" id="btn-podstawowa_popup" name="language_level_popup" autocomplete="off" value="Podstawowa">
+                      <label class="btn btn-form-check" for="btn-podstawowa_popup">Podstawowa</label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="radio" class="btn-check" id="btn-srednia_popup" name="language_level_popup" autocomplete="off" value="Średnia">
+                      <label class="btn btn-form-check" for="btn-srednia_popup">Średnia</label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="radio" class="btn-check" id="btn-bardzodobra_popup" name="language_level_popup" autocomplete="off" value="Bardzo dobra">
+                      <label class="btn btn-form-check" for="btn-bardzodobra_popup">Bardzo dobra</label>
+                    </div>
+                  </div>
+
+                  <div class="mb-3 range-wrap">
+                    <label for="experienceRange_popup" class="form-label">Doświadczenie jako Opiekunka</label>
+                    <input type="range" class="form-range range-cust" min="0" max="5" id="experienceRange_popup" name="experienceRange_popup">
+                    <div class="range-text">
+                      <div class="row d-flex" style="width: 117%; margin-top: 10px;">
+                        <div class="col">0</div>
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                        <div class="col">3</div>
+                        <div class="col">4</div>
+                        <div class="col">5+</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <div class="form-text">
+                      *Pola obowiązkowe
+                    </div>
+                    <div class="form-text">
+                      Informacje o przetwarzaniu Twoich danych osobowych znajdziesz <a href="https://bozko.toadres.pl/carema/klauzulainformacyjna.pdf" target="_blank">tutaj.</a>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-100">Aplikuj</button>
+                  </div>
+                </form>
           </div>
         </div>
       </div>

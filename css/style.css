@@ -187,7 +187,7 @@ a:active {
 .forms-subtitle {
     font-size: 18px;
     font-weight: 400;
-    color: var(--main-color-1);
+    color: var(--text-color-1);
 }
 
 .form-label {
@@ -694,6 +694,10 @@ hr {
     color: #ffffff;
 }
 
+.forms2 a {
+    color: #ffffff;
+}
+
 .forms2 .form-control {
     background-color: #387367;
     border-color: #387367;
@@ -894,12 +898,29 @@ footer a:active,
     opacity: 1;
 }
 
+/** Form Modal **/
+#form-modal-desktop .modal-content {
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    border: 2px solid #034E3F33;
+    box-shadow: 0px 4px 31px 0px #00000033;
+    padding: 20px 30px 30px 30px;
+}
+
+#form-modal-desktop .modal-content:hover {
+    border: 2px solid var(--main-color-2);
+}
+
 @media only screen and (min-width: 1400px) {}
 
 
 @media only screen and (max-width: 1399px) {
     .form-1 .mb-3 {
         margin-bottom: 0.2rem !important;
+    }
+
+    #form-modal-desktop .mb-3 {
+        margin-bottom: 1rem !important;
     }
 
     .form-background .col-4 {
