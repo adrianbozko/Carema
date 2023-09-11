@@ -758,22 +758,31 @@
               <div class="row">
                 <div class="contact-form-title">Wypełnij formularz</div>
                 <div class="forms2">
-                  <form>
-                    <div class="mb-2">
+                  <form action="kontakt.php" method="POST" class="needs-validation" novalidate>
+                    <div class="mb-2 position-relative">
                       <label for="name1" class="form-label">Imię*</label>
                       <input type="text" class="form-control" id="name1" name="name1" placeholder="Wpisz swoje imię" required>
+                      <div class="invalid-tooltip">
+                        Wpisz swoje imię
+                      </div>
                     </div>
-                    <div class="mb-2">
+                    <div class="mb-2 position-relative">
                       <label for="surname1" class="form-label">Nazwisko*</label>
                       <input type="text" class="form-control" id="surname1" name="surname1" placeholder="Wpisz swoje nazwisko" required>
+                      <div class="invalid-tooltip">
+                        Wpisz swoje nazwisko
+                      </div>
                     </div>
-                    <div class="mb-2">
+                    <div class="mb-2 position-relative">
                       <label for="phone1" class="form-label">Telefon*</label>
-                      <input type="tel" class="form-control" id="phone1" name="phone1" minlength="9" placeholder="+48 123 456 789" required>
+                      <input type="tel" class="form-control" id="phone1" name="phone1" minlength="9" pattern="[0-9]*" placeholder="123456789" required>
+                      <div class="invalid-tooltip">
+                        Niepoprawny numer
+                      </div>
                     </div>
                     <div class="mb-2">
                       <label for="email1" class="form-label">Mail</label>
-                      <input type="email" class="form-control" id="email1" name="email1" placeholder="Wpisz swój adres e-mail">
+                      <input type="text" class="form-control" id="email1" name="email1" placeholder="Wpisz swój adres e-mail">
                     </div>
                     <div class="mb-2">
                       <label for="Textarea1" class="form-label">Twoja wiadomość</label>
