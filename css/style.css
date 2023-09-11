@@ -259,6 +259,11 @@ a:active {
     font-size: 14px;
 }
 
+.form-text a {
+    color: var(--text-color-1);
+    text-decoration: underline !important;
+}
+
 .btn-primary {
     background-color: var(--main-color-2);
     border-color: var(--main-color-2);
@@ -378,6 +383,15 @@ a:active {
     bottom: -20px;
     right: -33px;
     z-index: 100;
+}
+
+/* Form Validation */
+
+.invalid-tooltip {
+    background-color: #00000000;
+    color: #E81B1B;
+    font-size: 14px;
+    right: 0%;
 }
 
 /* Owl Carousel */
