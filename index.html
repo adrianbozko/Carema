@@ -126,7 +126,7 @@
                     </div>
                   </div>
                   <label for="checki" class="form-label">Znajomość języka niemiekiego</label>
-                  <div class="mb-3 d-flex justify-content-around checki">
+                  <div class="mb-3 d-flex justify-content-between checki">
                     <input type="radio" class="btn-check" id="btn-nieznam" name="language_level" autocomplete="off" value="Nie znam">
                     <label class="btn btn-form-check" for="btn-nieznam">Nie znam</label>
                     <input type="radio" class="btn-check" id="btn-podstawowa" name="language_level" autocomplete="off" value="Podstawowa">
@@ -136,11 +136,12 @@
                     <input type="radio" class="btn-check" id="btn-bardzodobra" name="language_level" autocomplete="off" value="Bardzo dobra">
                     <label class="btn btn-form-check" for="btn-bardzodobra">Bardzo dobra</label>
                   </div>
-                  <div class="mb-3 range-wrap">
-                    <label for="experienceRange" class="form-label">Doświadczenie jako Opiekunka</label>
-                    <input type="range" class="form-range range-cust" min="0" max="5" id="experienceRange" name="experienceRange">
+                  <div class="range-container position-relative">
+                    <label class="form-label m-0" for="experienceRange">Doświadczenie jako Opiekunka</label>
+                    <input type="range" id="experienceRange" name="experienceRange" class="range-input" min="0" max="5" step="1" value="0">
+                    <div class="tooltip" id="tooltip">0</div>
                     <div class="range-text">
-                      <div class="row d-flex" style="width: 117%; margin-top: 10px;">
+                      <div class="row d-flex">
                         <div class="col">0</div>
                         <div class="col">1</div>
                         <div class="col">2</div>
@@ -150,7 +151,6 @@
                       </div>
                     </div>
                   </div>
-                  
                   <div class="mb-3">
                     <div class="form-text">
                       *Pola obowiązkowe
@@ -1184,7 +1184,7 @@
                   </div>
                   <label for="checki_popup" class="form-label">Znajomość języka niemiekiego</label>
 
-                  <div class="mb-3 d-flex justify-content-around checki_popup row-cols-2">
+                  <div class="mb-3 d-flex justify-content-between checki_popup row-cols-2">
                     <div class="col-auto">
                       <input type="radio" class="btn-check" id="btn-nieznam_popup" name="language_level_popup" autocomplete="off" value="Nie znam">
                       <label class="btn btn-form-check" for="btn-nieznam_popup">Nie znam</label>
@@ -1203,11 +1203,12 @@
                     </div>
                   </div>
 
-                  <div class="mb-3 range-wrap">
-                    <label for="experienceRange_popup" class="form-label">Doświadczenie jako Opiekunka</label>
-                    <input type="range" class="form-range range-cust" min="0" max="5" id="experienceRange_popup" name="experienceRange_popup">
+                  <div class="range-container position-relative">
+                    <label class="form-label m-0" for="experienceRange_popup">Doświadczenie jako Opiekunka</label>
+                    <input type="range" id="experienceRange_popup" name="experienceRange_popup" class="range-input" min="0" max="5" step="1" value="0">
+                    <div class="tooltip" id="tooltip_popup">0</div>
                     <div class="range-text">
-                      <div class="row d-flex" style="width: 117%; margin-top: 10px;">
+                      <div class="row d-flex">
                         <div class="col">0</div>
                         <div class="col">1</div>
                         <div class="col">2</div>
@@ -1282,6 +1283,104 @@
           }
         });
       });
+    </script>
+
+    <script>
+      const rangeInput = document.getElementById('experienceRange');
+      const tooltip = document.getElementById('tooltip');
+
+      rangeInput.addEventListener('input', updateValue);
+      window.addEventListener('resize', updateValueOnResize);
+
+      function updateValue() {
+          let properText =  "0 lat";
+          const value = rangeInput.value;
+          const rect = rangeInput.getBoundingClientRect();
+          const thumbWidth = 20;
+          const position = (rect.width - thumbWidth) * (value / (rangeInput.max - rangeInput.min)) - thumbWidth/2 - 8;
+          tooltip.style.left = `${position}px`;
+          if (value == 0) {
+              properText = "0 lat";
+          } else if (value == 1) {
+              properText = "1 rok";
+          } else if (value == 2) {
+              properText = "2 lata";
+          } else if (value == 3) {
+              properText = "3 lata";
+          } else if (value == 4) {
+              properText = "4 lata";
+          } else if (value == 5) {
+              properText = "5+ lat";
+          }
+          tooltip.textContent = properText;
+      }
+
+      function updateValueOnResize() {
+          updateValue();
+      }
+      updateValue(); 
+    </script>
+
+    <script>
+      const sliderEl = document.querySelector("#experienceRange")
+      const sliderValue = document.querySelector(".tooltip")
+
+      sliderEl.addEventListener("input", (event) => {
+        const tempSliderValue = event.target.value;         
+        const progress = (tempSliderValue / sliderEl.max) * 100;
+      
+        sliderEl.style.background = `linear-gradient(to right, #034E3F ${progress}%, #fff ${progress}%)`;
+      })
+    </script>
+
+    <!-- Modal Form -->
+
+    <script>
+      const rangeInput_popup = document.getElementById('experienceRange_popup');
+      const tooltip_popup = document.getElementById('tooltip_popup');
+
+      rangeInput_popup.addEventListener('input', updateValue_popup);
+      window.addEventListener('resize', updateValueOnResize_popup);
+
+      function updateValue_popup() {
+          let properText =  "0 lat";
+          const value= rangeInput_popup.value;
+          const rect = rangeInput_popup.getBoundingClientRect();
+          const thumbWidth = 20;
+          const position = (rect.width - thumbWidth) * (value / (rangeInput_popup.max - rangeInput_popup.min)) - thumbWidth/2 - 8;
+          tooltip_popup.style.left = `${position}px`;
+          if (value == 0) {
+              properText = "0 lat";
+          } else if (value == 1) {
+              properText = "1 rok";
+          } else if (value == 2) {
+              properText = "2 lata";
+          } else if (value == 3) {
+              properText = "3 lata";
+          } else if (value == 4) {
+              properTex = "4 lata";
+          } else if (value == 5) {
+              properText = "5+ lat";
+          }
+          tooltip_popup.textContent = properText;
+      }
+
+      function updateValueOnResize_popup() {
+          updateValue_popup();
+      }
+      updateValue_popup(); 
+    </script>
+
+    <script>
+      const sliderEl_popup = document.querySelector("#experienceRange_popup")
+      const sliderValue_popup = document.querySelector(".tooltip_popup")
+
+      sliderEl_popup.addEventListener("input", (event) => {
+        const tempSliderValue_popup = event.target.value;         
+        const progress = (tempSliderValue_popup / sliderEl_popup.max) * 100;
+      
+        sliderEl_popup.style.background = `linear-gradient(to right, #034E3F ${progress}%, #fff ${progress}%)`;
+      })
     </script>
 
   </body>

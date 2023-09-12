@@ -152,8 +152,8 @@ a:active {
 
 .form-background-text {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    bottom: 20px;
+    left: 20px;
     max-width: 493px;
 }
 
@@ -164,13 +164,13 @@ a:active {
 
 .forms {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     background-color: #E6E6E6;
     border-radius: 10px;
     border: 2px solid #034E3F33;
     box-shadow: 0px 4px 31px 0px #00000033;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 30px;
 }
 
 .forms:hover {
@@ -278,6 +278,75 @@ a:active {
     background-color: var(--main-color-1);
     border-color: var(--main-color-1);
 }
+
+/** Range **/
+
+.range-container {
+    position: relative;
+}
+
+.range-label {
+    font-size: 24px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #ffffff;
+    color: var(--main-color-1);
+    padding: 5px 10px;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in;
+    top: 52px;
+}
+
+.range-text {
+    width: 112%;
+    margin-top: 12px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #034E3F66;
+}
+
+
+
+.range-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    background-color: var(--main-color-1);
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px var(--main-color-1);
+}
+
+.range-input::-moz-range-thumb {
+    height: 12px;
+    width: 12px;
+    background-color: var(--main-color-1);
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px var(--main-color-1);
+}
+
 
 /** Buttom Aplikuj */
 
@@ -950,6 +1019,16 @@ footer a:active,
     .owl-prev {
         left: -460px;
     }
+
+    .forms {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .form-background-text {
+        bottom: 12px;
+        left: 12px;
+    }
 }
 
 @media only screen and (max-width: 1399px) and (min-width: 1200px) {
@@ -1008,6 +1087,7 @@ footer a:active,
     .forms {
         bottom: 16px;
         right: 16px;
+        padding: 15px 20px;
     }
 
     .form-background-text {
@@ -1250,5 +1330,9 @@ footer a:active,
     .modal .px-5 {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+    }
+
+    #form-modal-desktop .modal-content {
+        padding: 20px 10px 30px 10px;
     }
 }
