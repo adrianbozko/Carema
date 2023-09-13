@@ -67,25 +67,25 @@ EOT;
         <div class="row clearfix align-items-center">
             <div class="col-md-2">
                 <div class="logo">
-                    <a href="https://bozko.toadres.pl/carema/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-4"></a>
+                    <a href="https://carema.pl/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-4"></a>
                 </div>
             </div>
             <div class="col-md-10 d-flex justify-content-end gap-3">
                 <ul class="nav justify-content-around align-content-center">
                     <li class="nav-item">
-                        <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#onas">O nas</a>
+                        <a class="nav-link hover-underline" href="https://carema.pl/#onas">O nas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#gwarantujemy">Co gwarantujemy?</a>
+                        <a class="nav-link hover-underline" href="https://carema.pl/#gwarantujemy">Co gwarantujemy?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#oferty">Oferty pracy</a>
+                        <a class="nav-link hover-underline" href="https://carema.pl/#oferty">Oferty pracy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#rekrutacja">Proces rekrutacji</a>
+                        <a class="nav-link hover-underline" href="https://carema.pl/#rekrutacja">Proces rekrutacji</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#kontakt">Kontakt</a>
+                        <a class="nav-link hover-underline" href="https://carema.pl/#kontakt">Kontakt</a>
                     </li>
                 </ul>
                 <a href="https://carema.eliot.solutions/#/login" class="btn btn-contact" role="button" target="_blank">Kącik opiekunki</a>
@@ -94,11 +94,10 @@ EOT;
     </div>
 
     <!-- Navbar Mobile -->
-
     <nav class="navbar bg-body-tertiary display-only-mobile-1 fixed-top">
         <div class="container">
             <div class="logo">
-                <a href="https://bozko.toadres.pl/carema/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2"></a>
+                <a href="https://carema.pl/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2"></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -107,7 +106,7 @@ EOT;
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                         <div class="logo">
-                            <a href="https://bozko.toadres.pl/carema/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2"></a>
+                            <a href="https://carema.pl/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2"></a>
                         </div>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -115,19 +114,19 @@ EOT;
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-3 gap-3">
                         <li class="nav-item">
-                            <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#onas"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">O nas</button></a>
+                            <a class="nav-link hover-underline" href="https://carema.pl/#onas"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">O nas</button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#gwarantujemy"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Co gwarantujemy?</button></a>
+                            <a class="nav-link hover-underline" href="https://carema.pl/#gwarantujemy"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Co gwarantujemy?</button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#oferty"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Oferty pracy</button></a>
+                            <a class="nav-link hover-underline" href="https://carema.pl/#oferty"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Oferty pracy</button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#rekrutacja"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Proces rekrutacji</button></a>
+                            <a class="nav-link hover-underline" href="https://carema.pl/#rekrutacja"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Proces rekrutacji</button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-underline" href="https://bozko.toadres.pl/carema/#kontakt" id="test"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Kontakt</button></a>
+                            <a class="nav-link hover-underline" href="https://carema.pl/#kontakt" id="test"><button type="button" class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close">Kontakt</button></a>
                         </li>
                     </ul>
                     <div class="d-flex ">
@@ -137,7 +136,6 @@ EOT;
             </div>
         </div>
     </nav>
-
     <div class="container d-flex flex-column text-center justify-content-center align-items-center">
         <div class="box">
             <img src="images/thank_you.png" alt="Dziękujemy">
@@ -146,7 +144,7 @@ EOT;
             echo nl2br("<h2>$msg2</h2>");
             echo nl2br("<h2>$msg3</h2>");
             ?>
-            <a href="https://bozko.toadres.pl/carema/">
+            <a href="https://carema.pl/">
                 <div class="button-own">Powrót do strony głównej</div>
             </a>
         </div>

@@ -399,7 +399,7 @@ a:active {
     transition: all 0.3s ease;
     background: linear-gradient(0deg, #034E3F, #034E3F), linear-gradient(0deg, #01A88F, #01A88F);
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -910,6 +910,10 @@ footer a:active,
 .our-offer-text {
     font-size: 16px;
     color: #ffffff;
+}
+
+.our-offer-text a {
+    color: #ffffff !important;
 }
 
 .our-offer-modal-subtitle {
