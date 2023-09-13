@@ -56,14 +56,14 @@ Wiadomość: {$_POST['Textarea1']}
 Ta wiadomość została wysłana przez formularz kontaktowy na stronie Carema (https://carema.pl/).
 EOT;
         if (!$mail->send()) {
-            $msg = 'BŁĄD — Twój formularz nie został do nas wysłany. Wypełnij go ponownie lub zadzwoń bezpośrednio pod numer 699 606 670.';
+            $msg = 'BŁĄD — Twój formularz nie został do nas wysłany. Wypełnij go ponownie lub zadzwoń bezpośrednio pod numer 735 995 060.';
         } else {
             $msg = "$name, dziękujemy\r\nza zgłoszenie!";
-            $msg2 = "Już bierzemy się za szukanie zlecenia w sam raz dla Ciebie.\r\nZadzwonimy do Ciebie w ciągu dwóch dni roboczych. 😊";
+            $msg2 = "Skontaktujemy się z Tobą najszybciej jak to możliwe. 😊";
             $msg3 = "Miłego dnia i do usłyszenia!";
         }
     } else {
-        $msg = 'BŁĄD — Twój numer telefonu nie został poprawnie wprowadzony. Wypełnij formularz ponownie lub zadzwoń bezpośrednio pod numer 699 606 670.';
+        $msg = 'BŁĄD — Twój numer telefonu nie został poprawnie wprowadzony. Wypełnij formularz ponownie lub zadzwoń bezpośrednio pod numer 735 995 060.';
     }
     ?>
 
@@ -102,7 +102,7 @@ EOT;
     <nav class="navbar bg-body-tertiary display-only-mobile-1 fixed-top">
         <div class="container">
             <div class="logo">
-                <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2">
+                <a href="https://bozko.toadres.pl/carema/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2"></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -111,7 +111,7 @@ EOT;
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                         <div class="logo">
-                            <img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2">
+                            <a href="https://bozko.toadres.pl/carema/"><img src="images/mainlogo.png" alt="CAREMA" class="img-fluid logo-main my-2"></a>
                         </div>
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
