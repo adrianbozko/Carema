@@ -912,8 +912,13 @@ footer a:active,
     color: #ffffff;
 }
 
-.our-offer-text a {
+.our-offer-text a,
+.our-offer-text a:link,
+.our-offer-text a:visited,
+.our-offer-text a:active {
+    text-decoration: none !important;
     color: #ffffff !important;
+    text-decoration-style: none;
 }
 
 .our-offer-modal-subtitle {
