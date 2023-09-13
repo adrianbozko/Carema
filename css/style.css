@@ -296,7 +296,7 @@ a:active {
     padding: 5px 10px;
     border-radius: 13px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     white-space: nowrap;
     opacity: 1;
     pointer-events: none;
@@ -594,6 +594,87 @@ a:active {
 .offers-sub-text {
     font-size: 22px;
     color: var(--text-color-2);
+}
+
+.pink-circle {
+    min-width: 16px;
+    min-height: 16px;
+    background-color: var(--extra-color-1);
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.col-34px {
+    width: 34px;
+    margin-right: 15px;
+}
+
+.container-offer {
+    background-color: #D9E4E2;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.line-offer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 2px solid #B9D1CE;
+}
+
+.btn-show-more {
+    padding: 17px 47px 17px 47px;
+    border-radius: 39px;
+    border: 2px solid #01A88F;
+    background-color: #D9E4E2;
+    color: var(--main-color-1);
+    white-space: nowrap;
+}
+
+.btn-show-more:hover,
+.btn-show-more:active {
+    color: #ffffff;
+    background-color: var(--main-color-2);
+    border-color: var(--main-color-2);
+}
+
+.offer-title {
+    font-weight: 700;
+    font-size: 26px;
+    color: #383838;
+}
+
+.offer-number {
+    font-size: 22px;
+    color: #383838;
+}
+
+.offer-small-text {
+    font-size: 18px;
+    color: #383838;
+    line-height: 1.1;
+}
+
+.offer-bold-text,
+.offer-bold-text-2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #383838;
+    white-space: nowrap;
+}
+
+.offer-description {
+    font-size: 16px;
+    color: #383838;
+}
+
+.container-offer hr {
+    margin: 1.5rem 0;
+}
+
+.offer-item {
+    width: min-content !important;
 }
 
 
@@ -1156,7 +1237,7 @@ footer a:active,
     }
 
     .display-only-pc-2 {
-        display: none;
+        display: none !important;
     }
 
     .line {
@@ -1190,10 +1271,39 @@ footer a:active,
     }
 
     .center-text-mobile {
-        text-align: center;
-        justify-content: center;
+        text-align: center !important;
+        justify-content: center !important;
     }
 
+    .left-text-mobile {
+        text-align: left;
+    }
+
+    .offer-item {
+        width: auto !important;
+    }
+
+    .pink-circle {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .offer-bold-text {
+        margin-bottom: 1rem;
+    }
+
+    .offer-description {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-show-more {
+        width: 100%;
+    }
+
+    .offers-sub-text {
+        margin-bottom: 2.5rem !important;
+    }
 }
 
 @media only screen and (min-width: 992px) {
