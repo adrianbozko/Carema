@@ -656,12 +656,15 @@ a:active {
     line-height: 1.1;
 }
 
+.offer-bold-text {
+    white-space: nowrap;
+}
+
 .offer-bold-text,
 .offer-bold-text-2 {
     font-weight: 700;
     font-size: 18px;
     color: #383838;
-    white-space: nowrap;
 }
 
 .offer-description {
@@ -675,6 +678,21 @@ a:active {
 
 .offer-item {
     width: min-content !important;
+}
+
+.collapse .col-7 {
+    width: 62.8%;
+}
+
+.collapse .line-offer {
+    height: 100px;
+    top: 46%;
+}
+
+.what-op-says {
+    padding: 2rem;
+    background-color: #D4318A1A;
+    border-radius: 10px;
 }
 
 
@@ -1254,7 +1272,7 @@ footer a:active,
     }
 
     .full-width-991 {
-        width: 100%;
+        width: 100% !important;
     }
 
     .modal-2-img-bg {
@@ -1294,7 +1312,7 @@ footer a:active,
 
     .offer-description {
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .btn-show-more {
@@ -1303,6 +1321,14 @@ footer a:active,
 
     .offers-sub-text {
         margin-bottom: 2.5rem !important;
+    }
+
+    .what-op-says {
+        margin-bottom: 2.5rem;
+    }
+
+    .what-op-says .offer-description {
+        margin-bottom: 0;
     }
 }
 
