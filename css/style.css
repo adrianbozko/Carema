@@ -1335,4 +1335,24 @@ footer a:active,
     #form-modal-desktop .modal-content {
         padding: 20px 10px 30px 10px;
     }
+
+    .invalid-tooltip {
+        font-size: 14px;
+    }
+
+    .modal .btn-form-check {
+        width: 100%;
+    }
+
+    .modal .col-auto {
+        width: 100%;
+    }
+
+    .checki_popup {
+        gap: 1rem;
+    }
+
+    .margin-row {
+        margin-bottom: 1rem;
+    }
 }
