@@ -23,21 +23,21 @@
         date_default_timezone_set("Europe/Warsaw");
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp-mail.outlook.com';
+        $mail->Host = 'mx.medipe.com';
         $mail->Port = 587;
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'starttls';
-        $mail->Username = '';
+        $mail->Username = 'praca@carema.pl';
         $mail->Password = '';
-        $mail->setFrom('', 'Carema.pl - Formularz kontaktowy');
+        $mail->setFrom('praca@carema.pl', 'Carema.pl - Formularz kontaktowy');
         $mail->CharSet = PHPMailer::CHARSET_UTF8;
-        $sendToMail = '';
-        //$sendToMail2 = '';
+        $sendToMail = 'praca@carema.pl';
+        $sendToMail2 = 'adrian.bozko@outlook.com';
         $name = $_POST['name1'];
         $surname = $_POST['surname1'];
         $nameSurname = $name . ' ' . $surname;
         $mail->addAddress($sendToMail);
-        //$mail->addBCC($sendToMail2);
+        $mail->addBCC($sendToMail2);
         if (array_key_exists('email1', $_POST)) {
             $mail->addReplyTo($_POST['email1'], $nameSurname);
         } else {
