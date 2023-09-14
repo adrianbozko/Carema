@@ -328,8 +328,8 @@ a:active {
 .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
     background-color: var(--main-color-1);
     border-radius: 50%;
     border: none;
@@ -338,8 +338,8 @@ a:active {
 }
 
 .range-input::-moz-range-thumb {
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
     background-color: var(--main-color-1);
     border-radius: 50%;
     border: none;
@@ -1282,7 +1282,7 @@ footer a:active,
     }
 
     .center-item-991 {
-        align-items: center!important;
+        align-items: center !important;
     }
 
     .full-width-991 {

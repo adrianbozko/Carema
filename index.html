@@ -139,12 +139,12 @@
                     <div class="tooltip" id="tooltip">0</div>
                     <div class="range-text">
                       <div class="row d-flex">
-                        <div class="col">0</div>
-                        <div class="col">1</div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
-                        <div class="col">4</div>
-                        <div class="col">5+</div>
+                        <div class="col clickable-text" data-value="0">0</div>
+                        <div class="col clickable-text" data-value="1">1</div>
+                        <div class="col clickable-text" data-value="2">2</div>
+                        <div class="col clickable-text" data-value="3">3</div>
+                        <div class="col clickable-text" data-value="4">4</div>
+                        <div class="col clickable-text" data-value="5">5+</div>
                       </div>
                     </div>
                   </div>
@@ -1308,7 +1308,7 @@
             <div class="forms-title text-center">Wypełnij formularz</div>
                 <div class="forms-subtitle text-center">Znajdziemy dla Ciebie pracę!</div>
                 <form action="form_popup.php" method="POST" class="form-1 needs-validation" novalidate>
-                    <div class="mb-4 position-relative">
+                    <div class="mb-3 position-relative">
                       <label for="name_popup" class="form-label">Imię*</label>
                       <input type="text" class="form-control" id="name_popup" name="name_popup" placeholder="Anna" required>
                       <div class="invalid-tooltip">
@@ -1358,12 +1358,12 @@
                     <div class="tooltip" id="tooltip_popup">0</div>
                     <div class="range-text">
                       <div class="row d-flex">
-                        <div class="col">0</div>
-                        <div class="col">1</div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
-                        <div class="col">4</div>
-                        <div class="col">5+</div>
+                        <div class="col clickable-text" data-value="0">0</div>
+                        <div class="col clickable-text" data-value="1">1</div>
+                        <div class="col clickable-text" data-value="2">2</div>
+                        <div class="col clickable-text" data-value="3">3</div>
+                        <div class="col clickable-text" data-value="4">4</div>
+                        <div class="col clickable-text" data-value="5">5+</div>
                       </div>
                     </div>
                   </div>
@@ -1437,6 +1437,15 @@
 
       rangeInput.addEventListener('input', updateValue);
       window.addEventListener('resize', updateValueOnResize);
+      const clickableTexts = document.querySelectorAll('.clickable-text');
+
+      clickableTexts.forEach(text => {
+            text.addEventListener('click', () => {
+                const value = text.getAttribute('data-value');
+                rangeInput.value = value;
+                updateValue();
+            });
+        });
 
       function updateValue() {
           let properText =  "0 lat";
@@ -1488,12 +1497,22 @@
       rangeInput_popup.addEventListener('input', updateValue_popup);
       window.addEventListener('resize', updateValueOnResize_popup);
 
+      const clickableTexts_popup = document.querySelectorAll('.clickable-text');
+
+      clickableTexts_popup.forEach(text => {
+            text.addEventListener('click', () => {
+                const value = text.getAttribute('data-value');
+                rangeInput_popup.value = value;
+                updateValue_popup();
+            });
+        });
+
       function updateValue_popup() {
           let properText =  "0 lat";
           const value= rangeInput_popup.value;
           const rect = rangeInput_popup.getBoundingClientRect();
           const thumbWidth = 20;
-          const position = (rect.width - thumbWidth) * (value / (rangeInput_popup.max - rangeInput_popup.min)) - thumbWidth/2 - 8;
+          const position = (rect.width - thumbWidth) * (value / (rangeInput_popup.max - rangeInput_popup.min)) - thumbWidth/2 - 6;
           tooltip_popup.style.left = `${position}px`;
           if (value == 0) {
               properText = "0 lat";
