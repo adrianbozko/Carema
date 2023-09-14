@@ -679,9 +679,9 @@ a:active {
     width: min-content !important;
 }
 
-.collapse .col-7 {
+/** .collapse .col-7 {
     width: 62.8%;
-}
+}**/
 
 .collapse .line-offer {
     height: 100px;
@@ -692,6 +692,21 @@ a:active {
     padding: 2rem;
     background-color: #D4318A1A;
     border-radius: 10px;
+}
+
+.proper-width {
+    width: 211px;
+}
+
+.btn-no-offer-2 {
+    background-color: var(--extra-color-1);
+    padding: 18px 48px 18px 48px;
+    border-radius: 47px;
+}
+
+.btn-no-offer-2:hover {
+    background-color: #ffffff;
+    color: var(--extra-color-1);
 }
 
 
@@ -1267,7 +1282,7 @@ footer a:active,
     }
 
     .center-item-991 {
-        align-items: center;
+        align-items: center!important;
     }
 
     .full-width-991 {
@@ -1328,6 +1343,10 @@ footer a:active,
 
     .what-op-says .offer-description {
         margin-bottom: 0;
+    }
+
+    .proper-width {
+        width: 100%;
     }
 }
 
