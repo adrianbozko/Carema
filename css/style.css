@@ -328,8 +328,8 @@ a:active {
 .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     background-color: var(--main-color-1);
     border-radius: 50%;
     border: none;
@@ -338,8 +338,8 @@ a:active {
 }
 
 .range-input::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     background-color: var(--main-color-1);
     border-radius: 50%;
     border: none;
