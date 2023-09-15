@@ -321,7 +321,7 @@ a:active {
     cursor: pointer;
     outline: none;
     border-radius: 15px;
-    height: 3px;
+    height: 5px;
     background: #ffffff;
 }
 
@@ -352,6 +352,14 @@ a:active {
 
 .btn-aplikuj {
     padding: 18px 48px 18px 48px;
+    background-color: var(--extra-color-1);
+    border: 2px solid var(--extra-color-1);
+}
+
+.btn-aplikuj:hover, .btn-aplikuj:active {
+    background-color: #ffffff;
+    color: var(--extra-color-1);
+    border: 2px solid var(--extra-color-1);
 }
 
 /* Who section */

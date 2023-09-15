@@ -7,7 +7,7 @@
     <meta name="description" content="Site description">
     <meta name="keywords" content="Site keywords"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?version=23">
+    <link rel="stylesheet" href="css/style.css?version=24">
     <link rel="stylesheet" href="src/owl.carousel.min.css">
     <link rel="stylesheet" href="src/owl.theme.default.min.css?version=1">
   </head>
@@ -461,7 +461,7 @@
         <div class="container container-offer p-5">
           <div class="row direction-row-mobile-991">
             <div class="col offer-title text-start center-text-mobile">Znasz dobrze język? To jest oferta dla Ciebie!</div>
-            <div class="col offer-number text-end center-text-mobile">Zlecenie nr 37129</div>
+            <div class="col offer-number text-end center-text-mobile" id="oferta-1">Zlecenie nr 37129</div>
           </div>
           <div class="row">
             <div class="col"><hr></div>
@@ -501,15 +501,22 @@
           </div>
           <div class="row align-items-center">
             <div class="col-34px"><img src="images/work-icon-1.png"></div>
-            <div class="col offer-bold-text-2" id="oferta-1">Kilka słów o zleceniu:</div>
+            <div class="col offer-bold-text-2">Kilka słów o zleceniu:</div>
           </div>
           <div class="row direction-row-mobile-991">
             <div class="col-34px display-only-pc-2"></div>
             <div class="col-7 offer-description left-text-mobile full-width-991">Pan Frank ma 65 lat. Nadal jest aktywny, lubi jeździć na rowerze i spacerować. U seniora zaczyna się demencja. Jest w fazie łagodnej. Zdarza mu się zapominać np. co robił wczoraj albo że godzinę temu jadł obiad. Potrzebuje wsparcia przede wszystkim w codziennych czynnościach, przypominania zażyciu leków i odpowiednim nawadnianiu. Cenna dla niego jest również rozmowa z Opiekunką i proste treningi pamięci.</div>
             <div class="col d-flex justify-content-center horizontal-line display-only-pc-2"><div class="line-offer" id="hr-line-1"></div></div>
-            <div class="col d-flex align-items-center justify-content-end center-text-mobile">
-              <div class="btn btn-show-more" type="button" data-bs-toggle="collapse" data-bs-target="#offer-one" aria-expanded="false" aria-controls="offer-one" id="show-more-1">Zobacz więcej</div>
+            
+            <div class="col d-flex justify-content-center center-text-mobile flex-column button-row">
+              <div class=" col-auto mb-3 full-width-991 align-items-center">
+                <div class="btn btn-show-more" type="button" data-bs-toggle="collapse" data-bs-target="#offer-one" aria-expanded="false" aria-controls="offer-one" id="show-more-1">Zobacz więcej</div>
+              </div>
+              <div class=" col-auto full-width-991 align-items-center">
+                <div type="button" class="btn btn-no-offer-2 proper-width" id="aplikuj-more-1" data-bs-toggle="modal" data-bs-target="#form-modal-desktop">Aplikuj</div>
+              </div>
             </div>
+
           </div>
 
           <div class="collapse" id="offer-one">
@@ -638,11 +645,11 @@
       <!-- Zgłoś się -->
       <div class="container mb-5 no-padding">
         <div class="container">
-          <div class="row green-bg py-4 justify-content-center">
+          <div class="row green-bg py-4 justify-content-center flex-column align-items-center">
             <div class="no-offer-text mb-3">
               To tylko kilka z naszych zleceń.
             </div>
-            <div class="no-offer-subtext mb-4">Jeśli szukasz czegoś innego, nie ma sprawy!<br />Znajdziemy ofertę w sam raz dla Ciebie. Zgłoś się do nas,<br />a nasi Patroni Rekrutacji od razu zabiorą się za przeczesywanie bazy.</div>
+            <div class="no-offer-subtext mb-4">Jeśli szukasz czegoś innego, nie ma sprawy!<br />Znajdziemy ofertę w sam raz dla Ciebie. <br />Zgłoś się do nas, a nasi Patroni Rekrutacji od razu zabiorą się za przeczesywanie bazy.</div>
             <button type="button" class="btn btn-no-offer" data-bs-toggle="modal" data-bs-target="#form-modal-desktop">Znajdź ofertę dla mnie</button>
           </div>
         </div>
@@ -817,7 +824,7 @@
                   <div class="line"></div>
                 </div>
                 <div class="col-10 recruitment-process-text">
-                  Wybrałaś zlecenie odpowiadające Twoim potrzebom? <b>Czas na podpisanie umowy.</b> Możesz to zrobić online bez wychodzenia z domu.
+                  Wybrałaś zlecenie odpowiadające Twoim potrzebom? <b><br />Czas na podpisanie umowy.</b> Możesz to zrobić online bez wychodzenia z domu.
                 </div>
               </div>
             </div>
@@ -1061,7 +1068,7 @@
                     <div class="modal-details">
                       <div class="our-offer-modal-subtitle">Premia za długotrwałą współpracę</div>
                       <div class="our-offer-text">
-                        Naszym celem jest tworzenie społeczności i budowanie relacji. Cenimy osoby, które dążą do tego samego i są z nami na stałe. Do trzeciego i każdego kolejnego zlecenia dodajemy dodatkowe 100€.
+                        Naszym celem jest tworzenie społeczności i budowanie relacji. Cenimy osoby, które dążą do tego samego i są z nami na stałe. Do trzeciego i każdego kolejnego zlecenia dodajemy dodatkowe <b>100€</b>.
                       </div>
                     </div>
                   </div>
@@ -1070,7 +1077,7 @@
                     <div class="modal-details">
                       <div class="our-offer-modal-subtitle">Bonus za polecenie</div>
                       <div class="our-offer-text">
-                        Czy są lepsze sytuacje niż te, w których zyskujesz, a jednocześnie pomagasz?Daj szansę swojej koleżance, sąsiadowi lub mamie na nową pracę i zgarnij przy tym 150€. Chcesz skorzystać z bonusu za polecenie? Napisz maila na adres praca@carema.pl lub zadzwoń do <br />nas <a href="tel:+48735995060">735 995 060</a>.
+                        Czy są lepsze sytuacje niż te, w których zyskujesz, a jednocześnie pomagasz? Daj szansę swojej koleżance, sąsiadowi lub mamie na nową pracę i zgarnij przy tym <b>150€</b>. Chcesz skorzystać z bonusu za polecenie? Napisz maila na adres praca@carema.pl lub zadzwoń do <br />nas <a href="tel:+48735995060">735 995 060</a>.
                       </div>
                     </div>
                   </div>
@@ -1084,7 +1091,7 @@
                         ...prawdziwy i w dodatku od samego Mikołaja 😉
                         To szczególny czas dla Ciebie. Doskonale o tym wiemy! 
                         Nasi Patroni będą czuwać podczas całego Twojego zlecenia. 
-                        Również w takcie świąt. Ta praca się opłaca. Za czas świąt zgarnij 200€.
+                        Również w takcie świąt. Ta praca się opłaca. Za czas świąt zgarnij <b>200€</b>.
 
                       </div>
                     </div>
@@ -1179,7 +1186,7 @@
                       <b>Dla Twojej wygody wprowadziliśmy cotygodniowe rozmowy z Patronem.</b> <br />To czas dla Ciebie. Możesz na spokojnie wygadać się, podzielić radościami, ale i obawami. Patron stoi na straży Twojego komfortu i w razie problemów, pomoże.
                     </div>
                     <div class="our-offer-text pb-2">
-                      Ty również zawsze możesz do nas zadzwonić. Nie tylko w sprawach zawodowych. 😉 Stawiamy na relacje. <b>Jesteśmy dla Ciebie zawsze, kiedy potrzebujesz.</b>
+                      Ty również zawsze możesz do nas zadzwonić. Nie tylko w sprawach zawodowych. 😉 <br />Stawiamy na relacje. <b>Jesteśmy dla Ciebie zawsze, kiedy potrzebujesz.</b>
                     </div>
                     <div class="our-offer-text">
                       Przez całą dobę, 7 dni w tygodniu, w każde święto działa również nasza linia PN, czyli <b>linia Pomocy Nagłej</b>. Jeśli zdarzy się coś, co wymaga naszej niezwłocznej ingerencji, dzwoń śmiało!
@@ -1555,13 +1562,16 @@
     <script>
       const hrLine1 = document.getElementById("hr-line-1");
       const showMoreBtn1 = document.getElementById("show-more-1");
+      const aplikujBtn1 = document.getElementById("aplikuj-more-1");
       document.getElementById("show-more-1").addEventListener("click", function() {
             this.style.display = "none";
             hrLine1.style.display = "none";
+            aplikujBtn1.style.display = "none";
       });
       document.getElementById("show-less-1").addEventListener("click", function() {
             showMoreBtn1.style.display = "inline-block";
             hrLine1.style.display = "block";
+            aplikujBtn1.style.display = "inline-block";
       });
       
   </script>
