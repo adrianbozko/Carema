@@ -17,7 +17,6 @@
     require 'src/Exception.php';
     require 'src/PHPMailer.php';
     require 'src/SMTP.php';
-
     $msg = '';
     if (array_key_exists('phone_popup', $_POST)) {
         date_default_timezone_set("Europe/Warsaw");
@@ -88,7 +87,7 @@ EOT;
                         <a class="nav-link hover-underline" href="https://carema.pl/#kontakt">Kontakt</a>
                     </li>
                 </ul>
-                <a href="https://carema.eliot.solutions/#/login" class="btn btn-contact" role="button" target="_blank">Kącik opiekunki</a>
+                <a href="https://www.facebook.com/profile.php?id=61550507605923" class="btn btn-contact" role="button" target="_blank">Kącik Opiekunki</a>
             </div>
         </div>
     </div>
@@ -130,7 +129,7 @@ EOT;
                         </li>
                     </ul>
                     <div class="d-flex ">
-                        <a href="https://carema.eliot.solutions/#/login" class="btn btn-contact w-100" role="button" target="_blank">Kącik opiekunki</a>
+                        <a href="https://www.facebook.com/profile.php?id=61550507605923" class="btn btn-contact w-100" role="button" target="_blank">Kącik Opiekunki</a>
                     </div>
                 </div>
             </div>

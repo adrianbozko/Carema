@@ -356,7 +356,8 @@ a:active {
     border: 2px solid var(--extra-color-1);
 }
 
-.btn-aplikuj:hover, .btn-aplikuj:active {
+.btn-aplikuj:hover,
+.btn-aplikuj:active {
     background-color: #ffffff;
     color: var(--extra-color-1);
     border: 2px solid var(--extra-color-1);
@@ -384,7 +385,7 @@ a:active {
 .who-description {
     color: var(--text-color-2);
     font-size: 22px;
-    line-height: 1.1;
+    line-height: 1.5;
 }
 
 .who-name {
@@ -573,7 +574,9 @@ a:active {
     padding: 17px 48px 17px 48px;
 }
 
-.btn-we-offer-1:hover {
+.btn-we-offer-1:hover,
+.btn-we-offer-1:active,
+.btn-we-offer-1:focus {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -586,7 +589,9 @@ a:active {
     padding: 17px 48px 17px 48px;
 }
 
-.btn-we-offer-2:hover {
+.btn-we-offer-2:hover,
+.btn-we-offer-2:active,
+.btn-we-offer-2:focus {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -740,7 +745,9 @@ a:active {
     max-width: fit-content;
 }
 
-.btn-no-offer:hover {
+.btn-no-offer:hover,
+.btn-no-offer:active,
+.btn-no-offer:focus {
     background-color: #ffffff;
     color: var(--extra-color-1);
 }
@@ -961,7 +968,9 @@ hr {
     background-color: var(--main-color-1);
 }
 
-.btn-footer-2:hover {
+.btn-footer-2:hover,
+.btn-footer-2:active,
+.btn-footer-2:focus {
     border: 2px solid var(--main-color-2);
     background-color: var(--main-color-2);
 }
@@ -1432,6 +1441,16 @@ footer a:active,
     .owl-prev {
         left: -164px;
         top: -427px;
+    }
+
+    .btn-check:hover+.btn,
+    .btn.active,
+    .btn.show,
+    .btn:first-child:active,
+    :not(.btn-check)+.btn:active {
+        color: #ffffff;
+        background-color: var(--main-color-2);
+        border-color: var(--main-color-2);
     }
 }
 
