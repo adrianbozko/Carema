@@ -2,6 +2,22 @@
 <html lang="pl">
 
 <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+          ad_storage: "denied",
+          analytics_storage: "denied",
+          functionality_storage: "denied",
+          personalization_storage: "denied",
+          security_storage: "granted",
+          wait_for_update: 2000,
+      });
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", true);
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,6 +25,9 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-NXCJ8LCT');</script>
     <!-- End Google Tag Manager -->
+    <!-- Start cookieyes banner -->
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/8e79603592b81e15b63d3d8c/script.js"></script>
+    <!-- End cookieyes banner -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,6 +208,20 @@ EOT;
             font-size: 18px;
         }
 
+        .wa-chat-bubble {
+            display: none!important;
+        }
+
+        .wa-chat-box-brand {
+            background-color: #ffffff!important;
+            border: none!important;
+        }
+
+        .cky-revisit-bottom-left {
+            bottom: 80px!important;
+            left: 8px!important;
+        }
+
         .container-own {
             overflow: hidden;
             justify-content: center;
@@ -341,5 +374,41 @@ EOT;
     </style>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+<script>
+      var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?14708';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#01A88F",
+          "ctaText":"Napisz do Nas",
+          "borderRadius":"25",
+          "marginLeft": "5",
+          "marginRight": "20",
+          "marginBottom": "20",
+          "ctaIconWATI":false,
+          "position":"left"
+      },
+      "brandSetting":{
+          "brandName":"Carema",
+          "brandSubTitle":"undefined",
+          "brandImg":"https://carema.pl/images/sygnet_big.png",
+          "welcomeText":"Cześć,\nw czym możemy Ci pomóc?",
+          "messageText":"",
+          "backgroundColor":"#ffffff",
+          "ctaText":"Napisz do Nas",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"48880660061"
+      }
+      };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
 </html>

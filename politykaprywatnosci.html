@@ -8,7 +8,7 @@
     <meta name="description" content="Dołącz do nas i zostań Opiekunką seniorów! Legalna praca, pełne wsparcie, prosta rekrutacja i wysokie zarobki. Sprawdź sama!">
     <meta name="keywords" content="Praca w opiece, Praca w opiece w Niemczach, Praca w opiece Niemcy, Opieka nad seniorami Niemcy, Opiekunka seniorów, Opiekunka seniorów w Niemczech, Praca w Niemczech, Praca jako opiekunka, Opieka nad seniorami, Opiekunka osób starszych, Opiekunka osób starszych praca Niemcy, Opiekunka oferty pracy Niemcy, Praca dla opiekunek w Niemczech"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/polityka.css?version=19_09_2023_01">
+    <link rel="stylesheet" href="css/polityka.css?version=27_09_2023_01">
     <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png?v=1">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=1">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=1">
@@ -137,4 +137,41 @@
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?14708';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#01A88F",
+        "ctaText":"Napisz do Nas",
+        "borderRadius":"25",
+        "marginLeft": "5",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI":false,
+        "position":"left"
+    },
+    "brandSetting":{
+        "brandName":"Carema",
+        "brandSubTitle":"undefined",
+        "brandImg":"https://carema.pl/images/sygnet_big.png",
+        "welcomeText":"Cześć,\nw czym możemy Ci pomóc?",
+        "messageText":"",
+        "backgroundColor":"#ffffff",
+        "ctaText":"Napisz do Nas",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"48880660061"
+    }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
 </html>

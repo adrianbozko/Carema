@@ -11,6 +11,15 @@ body {
     font-size: 18px;
 }
 
+.wa-chat-bubble {
+    display: none!important;
+}
+
+.wa-chat-box-brand {
+    background-color: #ffffff!important;
+    border: none!important;
+}
+
 .container-own {
     overflow: hidden;
     justify-content: center;
