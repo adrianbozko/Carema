@@ -52,7 +52,7 @@ require 'oferty/oferta_4.php';
   <meta name="description" content="Dołącz do nas i zostań Opiekunką seniorów! Legalna praca, pełne wsparcie, prosta rekrutacja i wysokie zarobki. Sprawdź sama!">
   <meta name="keywords" content="Praca w opiece, Praca w opiece w Niemczach, Praca w opiece Niemcy, Opieka nad seniorami Niemcy, Opiekunka seniorów, Opiekunka seniorów w Niemczech, Praca w Niemczech, Praca jako opiekunka, Opieka nad seniorami, Opiekunka osób starszych, Opiekunka osób starszych praca Niemcy, Opiekunka oferty pracy Niemcy, Praca dla opiekunek w Niemczech" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css?version=27_09_2023_05">
+  <link rel="stylesheet" href="css/style.css?version=17_10_2023_01">
   <link rel="stylesheet" href="src/owl.carousel.min.css">
   <link rel="stylesheet" href="src/owl.theme.default.min.css?version=19_09_2023_01">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png?v=1">
@@ -423,9 +423,15 @@ require 'oferty/oferta_4.php';
     <!-- Co możemy Ci zagwarantować? -->
     <div class="container mb-5 no-padding">
       <div class="container">
-        <div class="row our-offer-box p-5" id="gwarantujemy">
+        <div class="row our-offer-box py-5" id="gwarantujemy">
           <div class="recruitment-text-title mb-4">Co możemy Ci zagwarantować?</div>
           <div class="gradient"></div>
+          <div class="owl-nav-custom">
+            <button type="button" class="owl-prev-custom"><span>
+                ‹ </span></button>
+            <button type="button" class="owl-next-custom"><span>
+                › </span></button>
+          </div>
           <div class="owl-carousel owl-theme">
             <div>
               <div class="container">
@@ -1986,21 +1992,29 @@ require 'oferty/oferta_4.php';
         margin: 20,
         autoplay: false,
         responsiveClass: true,
-        nav: true,
         dots: false,
         responsive: {
           0: {
             items: 1,
-            dots: true
+            dots: true,
+            nav: true
           },
           992: {
-            items: 2
+            items: 2,
+            nav: true
           },
           1200: {
-            items: 3
+            items: 3,
+            nav: false
           }
         }
       });
+      $('.owl-next-custom').click(function() {
+        owl.trigger('next.owl.carousel');
+      })
+      $('.owl-prev-custom').click(function() {
+        owl.trigger('prev.owl.carousel');
+      })
     });
   </script>
 

@@ -50,17 +50,17 @@ a:active {
 }
 
 .wa-chat-bubble {
-    display: none!important;
+    display: none !important;
 }
 
 .wa-chat-box-brand {
-    background-color: #ffffff!important;
-    border: none!important;
+    background-color: #ffffff !important;
+    border: none !important;
 }
 
 .cky-revisit-bottom-left {
-    bottom: 80px!important;
-    left: 8px!important;
+    bottom: 80px !important;
+    left: 8px !important;
 }
 
 /* Nav */
@@ -449,7 +449,7 @@ a:active {
     max-height: 354px;
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel-inicators [data-bs-target] {
     width: 10px;
     height: 10px;
     background-color: var(--main-color-2);
@@ -493,11 +493,9 @@ a:active {
     background: linear-gradient(90deg, rgba(240, 240, 232, 0) 0%, rgba(240, 240, 232, 1) 50%);
     z-index: 10 !important;
     position: absolute;
-    height: 100%;
-    width: 23%;
-    max-height: 680px;
-    right: 110px;
-    display: none;
+    height: 90%;
+    width: 20%;
+    right: 0px;
 }
 
 .owl-carousel {
@@ -506,7 +504,7 @@ a:active {
 
 .owl-nav {
     height: 0px;
-    z-index: 15 !important;
+    z-index: 9999 !important;
     /* display: none; */
 }
 
@@ -517,6 +515,7 @@ a:active {
     border-radius: 100% !important;
     background-color: #c2d0c7 !important;
     opacity: 1;
+    z-index: 9999 !important;
 }
 
 .owl-next span,
@@ -539,12 +538,65 @@ a:active {
 }
 
 #gwarantujemy {
-    padding-left: 7rem !important;
-    padding-right: 7rem !important;
+    position: relative;
 }
 
 .owl-dots {
     margin-top: 20px;
+}
+
+.owl-carousel {
+    padding-left: 7rem !important;
+}
+
+/* Custom Prev/Next Buttons */
+.owl-prev-custom,
+.owl-next-custom {
+    height: 74px;
+    width: 74px;
+    border-radius: 100% !important;
+    background-color: #c2d0c7 !important;
+    opacity: 1;
+    z-index: 9999;
+
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.owl-next-custom span,
+.owl-prev-custom span {
+    font-size: 50px !important;
+    line-height: 28px !important;
+    color: var(--main-color-1);
+    font: inherit;
+    cursor: pointer;
+    user-select: none;
+}
+
+.owl-next-custom {
+    position: relative;
+    right: -558px;
+    top: 211px;
+}
+
+.owl-prev-custom {
+    position: relative;
+    left: -558px;
+    top: 211px;
+}
+
+.owl-nav-custom {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    height: 0px;
+    z-index: 500 !important;
 }
 
 /* What we offer? */
@@ -580,7 +632,7 @@ a:active {
     font-size: 16px;
 }
 
-.btn-we-offer-1, 
+.btn-we-offer-1,
 .btn-we-offer-1:active,
 .btn-we-offer-1:focus {
     border: 2px solid #ffffff;
@@ -1178,6 +1230,14 @@ footer a:active,
         left: -460px;
     }
 
+    .owl-next-custom {
+        right: -470px;
+    }
+
+    .owl-prev-custom {
+        left: -470px;
+    }
+
     .forms {
         bottom: 12px;
         right: 12px;
@@ -1284,6 +1344,24 @@ footer a:active,
 
     .owl-prev {
         left: -375px;
+    }
+
+    .owl-nav-custom {
+        display: none;
+    }
+
+    .gradient {
+        display: none;
+    }
+
+    #gwarantujemy {
+        position: relative;
+        padding-left: 7rem !important;
+        padding-right: 7rem !important;
+    }
+
+    .owl-carousel {
+        padding-left: 0rem !important;
     }
 }
 
