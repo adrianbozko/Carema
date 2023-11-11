@@ -2,6 +2,7 @@
 $oferta2 = [
     'oferta_pracy' => [
         'numer_oferty' => '37423',
+        'plec' => 'Podopieczny:',
         'podopieczny' => 'Pan Klaus',
         'miejscowosc' => 'Rottenburg am Neckar',
         'termin' => '19.10 - 19.12.2023',

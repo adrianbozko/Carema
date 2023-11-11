@@ -538,7 +538,7 @@ require 'oferty/oferta_4.php';
           <div class="col-auto offer-item d-flex align-items-center direction-row-mobile-991">
             <div class="pink-circle"></div>
             <div class="row">
-              <div class="offer-small-text">Podopieczny:</div>
+              <div class="offer-small-text"><?php echo $oferta1['oferta_pracy']['plec']; ?></div>
               <div class="offer-bold-text"><?php echo $oferta1['oferta_pracy']['podopieczny']; ?></div>
             </div>
           </div>
@@ -704,7 +704,7 @@ require 'oferty/oferta_4.php';
           <div class="col-auto offer-item d-flex align-items-center direction-row-mobile-991">
             <div class="pink-circle"></div>
             <div class="row">
-              <div class="offer-small-text">Podopieczny:</div>
+              <div class="offer-small-text"><?php echo $oferta2['oferta_pracy']['plec']; ?></div>
               <div class="offer-bold-text"><?php echo $oferta2['oferta_pracy']['podopieczny']; ?></div>
             </div>
           </div>
@@ -871,7 +871,7 @@ require 'oferty/oferta_4.php';
           <div class="col-auto offer-item d-flex align-items-center direction-row-mobile-991">
             <div class="pink-circle"></div>
             <div class="row">
-              <div class="offer-small-text">Podopieczny:</div>
+              <div class="offer-small-text"><?php echo $oferta3['oferta_pracy']['plec']; ?></div>
               <div class="offer-bold-text"><?php echo $oferta3['oferta_pracy']['podopieczny']; ?></div>
             </div>
           </div>
@@ -1039,7 +1039,7 @@ require 'oferty/oferta_4.php';
           <div class="col-auto offer-item d-flex align-items-center direction-row-mobile-991">
             <div class="pink-circle"></div>
             <div class="row">
-              <div class="offer-small-text">Podopieczny:</div>
+              <div class="offer-small-text"><?php echo $oferta4['oferta_pracy']['plec']; ?></div>
               <div class="offer-bold-text"><?php echo $oferta4['oferta_pracy']['podopieczny']; ?></div>
             </div>
           </div>
