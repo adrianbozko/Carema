@@ -5,9 +5,9 @@ $oferta4 = [
         'plec' => 'Podopieczna:',
         'podopieczny' => 'Pani Emilia',
         'miejscowosc' => 'Lübeck',
-        'termin' => '20.10 - 20.12.2023',
+        'termin' => '20.12 - 20.02.2024',
         'stawka' => '1 800 € netto/mies.',
-        'kilka_slow' => 'Podopieczna ma 90 lat, cierpi na chorobę Parkinsona i artrozę. Porusza się ze wsparciem drugiej osoby lub rollatora. Ma w pełni zachowane zdrowie psychiczne. Pani jest miłą, kulturalną konkietą. <br />W przeszłości była pisarką. Obecnie jej głównym hobby jest malarstwo.',
+        'kilka_slow' => 'Podopieczna ma 90 lat, cierpi na chorobę Parkinsona i artrozę. Porusza się ze wsparciem drugiej osoby lub rollatora. Ma w pełni zachowane zdrowie psychiczne. Pani jest miłą, kulturalną kobietą. <br />W przeszłości była pisarką. Obecnie jej głównym hobby jest malarstwo.',
         'choroby' =>
         '<ul>
                 <li>Podopieczna cierpi na chorobę Parkinsona</li>
