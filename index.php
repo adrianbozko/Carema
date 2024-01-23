@@ -52,7 +52,7 @@ require 'oferty/oferta_4.php';
   <meta name="description" content="Dołącz do nas i zostań Opiekunką seniorów! Legalna praca, pełne wsparcie, prosta rekrutacja i wysokie zarobki. Sprawdź sama!">
   <meta name="keywords" content="Praca w opiece, Praca w opiece w Niemczach, Praca w opiece Niemcy, Opieka nad seniorami Niemcy, Opiekunka seniorów, Opiekunka seniorów w Niemczech, Praca w Niemczech, Praca jako opiekunka, Opieka nad seniorami, Opiekunka osób starszych, Opiekunka osób starszych praca Niemcy, Opiekunka oferty pracy Niemcy, Praca dla opiekunek w Niemczech" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css?version=17_10_2023_01">
+  <link rel="stylesheet" href="css/style.css?version=22_01_2024_01">
   <link rel="stylesheet" href="src/owl.carousel.min.css">
   <link rel="stylesheet" href="src/owl.theme.default.min.css?version=19_09_2023_01">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png?v=1">
@@ -289,21 +289,6 @@ require 'oferty/oferta_4.php';
             Patronka zleceń
           </div>
         </div>
-        <!-- 
-          <div class="col">
-            <div class="btn btn-who-1 mb-2">
-              <img src="images/team_4.png" class="img-fluid">
-              <div class="who-box-text">
-                Organizacja i cierpliwość to jego drugie imię. Z chęcią wyjaśni Ci każdy paragraf umowy, organizację podróży. A jeśli zapytasz, na pewno równie chętnie sprawdzi, co możesz pozwiedzać w okolicy zlecenia. 😊
-              </div>
-            </div>
-            <div class="who-name">
-              Bartek
-            </div>
-            <div class="who-position">
-              Patron wyjazdu
-            </div>
-          </div>-->
         <div class="col">
           <div class="btn btn-who-1 mb-2">
             <img src="images/team_5.webp" class="img-fluid">
@@ -318,6 +303,20 @@ require 'oferty/oferta_4.php';
             Patronka zleceń
           </div>
         </div>
+        <div class="col">
+            <div class="btn btn-who-1 mb-2">
+              <img src="images/team_4.webp" class="img-fluid">
+              <div class="who-box-text">
+                Od naszych Opiekunek słyszymy, że rozmowy z Kamilem poprawiają im humor. Gdybyśmy mieli określić go jednym słowem byłaby to EMPATIA. W razie potrzeby chętnie Cię wysłucha, postara się zrozumieć i pomóc.
+              </div>
+            </div>
+            <div class="who-name">
+              Kamil
+            </div>
+            <div class="who-position">
+              Patron zleceń
+            </div>
+          </div>
       </div>
     </div>
 
@@ -328,8 +327,8 @@ require 'oferty/oferta_4.php';
         <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <!--<button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="3" aria-label="Slide 4"></button>-->
-        <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="3" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -383,23 +382,6 @@ require 'oferty/oferta_4.php';
             </div>
           </div>
         </div>
-        <!--<div class="carousel-item">
-            <div class="d-block w-100 text-center">
-              <div class="btn btn-who-1 mb-2">
-                <img src="images/team_4.png" class="img-fluid img-who">
-                <div class="klik-icon"><img src="images/klik.png"></div>
-                <div class="who-box-text">
-                  Organizacja i cierpliwość to jego drugie imię. Z chęcią wyjaśni Ci każdy paragraf umowy, organizację podróży. A jeśli zapytasz, na pewno równie chętnie sprawdzi, co możesz pozwiedzać w okolicy zlecenia. 😊
-                </div>
-              </div>
-              <div class="who-name">
-                Bartek
-              </div>
-              <div class="who-position">
-                Patron wyjazdu
-              </div>
-            </div>
-          </div>-->
         <div class="carousel-item">
           <div class="d-block w-100 text-center">
             <div class="btn btn-who-1 mb-2">
@@ -417,6 +399,23 @@ require 'oferty/oferta_4.php';
             </div>
           </div>
         </div>
+        <div class="carousel-item">
+            <div class="d-block w-100 text-center">
+              <div class="btn btn-who-1 mb-2">
+                <img src="images/team_4.webp" class="img-fluid img-who">
+                <div class="klik-icon"><img src="images/klik.png"></div>
+                <div class="who-box-text">
+                  Od naszych Opiekunek słyszymy, że rozmowy z Kamilem poprawiają im humor. Gdybyśmy mieli określić go jednym słowem byłaby to EMPATIA. W razie potrzeby chętnie Cię wysłucha, postara się zrozumieć i pomóc.
+                </div>
+              </div>
+              <div class="who-name">
+                Kamil
+              </div>
+              <div class="who-position">
+                Patron zleceń
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -461,7 +460,7 @@ require 'oferty/oferta_4.php';
                   </div>
                   <div class="row">
                     <div class="our-offer-text-box green-version-box d-flex flex-wrap align-content-between p-4 center-text-mobile">
-                      <div class="our-offer-main-text mb-3">Zlecenia zweryfikowane przez opiekunki</div>
+                      <div class="our-offer-main-text mb-3">Zlecenia zweryfikowane przez Opiekunki</div>
                       <div class="our-offer-sub-text mb-3">U nas masz gwarancję sprawdzonych ofert. Nasi konsultanci w Niemczech weryfikują stan zdrowia i miejsce zamieszkania podopiecznych. Co więcej nasze zlecenia opiniują...
                       </div>
                       <div class="vstack">
