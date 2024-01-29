@@ -52,7 +52,7 @@ require 'oferty/oferta_4.php';
   <meta name="description" content="Dołącz do nas i zostań Opiekunką seniorów! Legalna praca, pełne wsparcie, prosta rekrutacja i wysokie zarobki. Sprawdź sama!">
   <meta name="keywords" content="Praca w opiece, Praca w opiece w Niemczach, Praca w opiece Niemcy, Opieka nad seniorami Niemcy, Opiekunka seniorów, Opiekunka seniorów w Niemczech, Praca w Niemczech, Praca jako opiekunka, Opieka nad seniorami, Opiekunka osób starszych, Opiekunka osób starszych praca Niemcy, Opiekunka oferty pracy Niemcy, Praca dla opiekunek w Niemczech" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css?version=22_01_2024_01">
+  <link rel="stylesheet" href="css/style.css?version=29_01_2024_01">
   <link rel="stylesheet" href="src/owl.carousel.min.css">
   <link rel="stylesheet" href="src/owl.theme.default.min.css?version=19_09_2023_01">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png?v=1">
@@ -150,9 +150,9 @@ require 'oferty/oferta_4.php';
     <!-- BG and Form - Desktop -->
     <div class="container mb-5 no-padding">
       <div class="form-background">
-        <img class="form-background-bg img-fluid no-display-767" src="images/head_background.webp" />
-        <img class="form-background-bg img-fluid mobile-form-background-text" src="images/head_background_mobile.webp" />
-        <img class="form-background-text img-fluid" src="images/form_text.png" />
+        <img class="form-background-bg img-fluid no-display-767" id="carema-bg" src="images/head_background.webp" />
+        <img class="form-background-bg img-fluid mobile-form-background-text" id="carema-bg-mobile" src="images/head_background_mobile.webp" />
+        <img class="form-background-text img-fluid" id="carema-bg-text" src="images/form_text.png" />
         <div class="col-4 forms" id="form1">
           <div class="forms-title text-center">Wypełnij formularz</div>
           <div class="forms-subtitle text-center">Znajdziemy dla Ciebie pracę!</div>
@@ -222,10 +222,10 @@ require 'oferty/oferta_4.php';
       </div>
     </div>
     <div class="container mb-5 no-padding">
-      <img class="img-fluid mobile-form-background-text-medium" src="images/form_text_mobile_old.png?version=1" />
+      <img class="img-fluid mobile-form-background-text-medium" id="carema-bg-text-mobile-old" src="images/form_text_mobile_old.png?version=1" />
     </div>
     <div class="container mb-5 no-padding">
-      <img class="img-fluid mobile-form-background-text" src="images/form_text_mobile.png?version=1" />
+      <img class="img-fluid mobile-form-background-text" id="carema-bg-text-mobile" src="images/form_text_mobile.png?version=1" />
     </div>
 
     <!-- Aplikuj Button Mobile -->
@@ -1966,6 +1966,31 @@ require 'oferty/oferta_4.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="src/jquery-3.7.1.min.js"></script>
   <script src="src/owl.carousel.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var background = document.getElementById("carema-bg");
+      var background_mobile = document.getElementById("carema-bg-mobile");
+      var text = document.getElementById("carema-bg-text");
+      var text_mobile = document.getElementById("carema-bg-text-mobile");
+      var text_mobile_old = document.getElementById("carema-bg-text-mobile-old");
+      var isEven = new Date().getDate() % 2 === 0;
+
+      if (isEven) {
+        background.src = "images/head_background.webp";
+        background_mobile.src = "images/head_background_mobile.webp";
+        text.src = "images/form_text.png";
+        text_mobile.src = "images/form_text_mobile.png";
+        text_mobile_old.src = "images/form_text_mobile_old.png";
+      } else {
+        background.src = "images/head_background_1.webp";
+        background_mobile.src = "images/head_background_mobile_1.webp";
+        text.src = "images/form_text_1.png";
+        text_mobile.src = "images/form_text_mobile_1.png";
+        text_mobile_old.src = "images/form_text_mobile_old_1.png";
+      }
+    });
+  </script>
+
   <script>
     (() => {
       'use strict'
