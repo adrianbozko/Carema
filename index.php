@@ -54,7 +54,7 @@ require 'oferty/oferta_4.php';
   <meta name="description" content="Dołącz do nas i zostań Opiekunką seniorów! Legalna praca, pełne wsparcie, prosta rekrutacja i wysokie zarobki. Sprawdź sama!">
   <meta name="keywords" content="Praca w opiece, Praca w opiece w Niemczach, Praca w opiece Niemcy, Opieka nad seniorami Niemcy, Opiekunka seniorów, Opiekunka seniorów w Niemczech, Praca w Niemczech, Praca jako opiekunka, Opieka nad seniorami, Opiekunka osób starszych, Opiekunka osób starszych praca Niemcy, Opiekunka oferty pracy Niemcy, Praca dla opiekunek w Niemczech" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css?version=29_01_2024_01">
+  <link rel="stylesheet" href="css/style.css?version=18_02_2024_01">
   <link rel="stylesheet" href="src/owl.carousel.min.css">
   <link rel="stylesheet" href="src/owl.theme.default.min.css?version=19_09_2023_01">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png?v=1">
@@ -1661,7 +1661,7 @@ require 'oferty/oferta_4.php';
                   <div class="modal-details">
                     <div class="our-offer-modal-subtitle">Bonus świąteczny</div>
                     <div class="our-offer-text">
-                    ...prawdziwy i w dodatku od samego Zajączka 😉 To szczególny czas dla Ciebie. Doskonale o tym wiemy! Nasi Patroni będą czuwać podczas całego Twojego zlecenia. Również w takcie świąt. Za czas świąt zgarnij nawet do 300€. <a href="Carema_Wielkanoc.pdf" target="_blank">Regulamin 👈</a> 
+                    ...prawdziwy i w dodatku od samego Zajączka 😉 To szczególny czas dla Ciebie. Doskonale o tym wiemy! Nasi Patroni będą czuwać podczas całego Twojego zlecenia. Również w takcie świąt. Za czas świąt zgarnij nawet do 300€. <a href="Carema_Wielkanoc.pdf" target="_blank"><b>Regulamin</b> 👈</a> 
                     </div>
                   </div>
                 </div>
