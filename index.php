@@ -1661,7 +1661,7 @@ require 'oferty/oferta_4.php';
                   <div class="modal-details">
                     <div class="our-offer-modal-subtitle">Bonus świąteczny</div>
                     <div class="our-offer-text">
-                    ...prawdziwy i w dodatku od samego Zajączka 😉 To szczególny czas dla Ciebie. Doskonale o tym wiemy! Nasi Patroni będą czuwać podczas całego Twojego zlecenia. Również w takcie świąt. Za czas świąt zgarnij nawet do 300€. <a href="Carema_Wielkanoc.pdf" target="_blank"><b>Regulamin</b> 👈</a> 
+                    ...prawdziwy i w dodatku od samego Zajączka 😉 To szczególny czas dla Ciebie. Doskonale o tym wiemy! Nasi Patroni będą czuwać podczas całego Twojego zlecenia. Również w takcie świąt. Za czas świąt zgarnij nawet do <b>300€.</b> <a href="Carema_Wielkanoc.pdf" target="_blank"><b>Regulamin</b> 👈</a> 
                     </div>
                   </div>
                 </div>
