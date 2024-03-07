@@ -305,7 +305,7 @@ require 'oferty/oferta_4.php';
             Patronka zleceń
           </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
             <div class="btn btn-who-1 mb-2">
               <img src="images/team_4.webp" class="img-fluid">
               <div class="who-box-text">
@@ -318,7 +318,7 @@ require 'oferty/oferta_4.php';
             <div class="who-position">
               Patron zleceń
             </div>
-          </div>
+        </div> -->
       </div>
     </div>
 
@@ -330,7 +330,7 @@ require 'oferty/oferta_4.php';
         <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <!-- <button type="button" data-bs-target="#carouselTeam" data-bs-slide-to="4" aria-label="Slide 5"></button> -->
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -401,7 +401,7 @@ require 'oferty/oferta_4.php';
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
             <div class="d-block w-100 text-center">
               <div class="btn btn-who-1 mb-2">
                 <img src="images/team_4.webp" class="img-fluid img-who">
@@ -417,7 +417,7 @@ require 'oferty/oferta_4.php';
                 Patron zleceń
               </div>
             </div>
-          </div>
+          </div> -->
       </div>
     </div>
 
