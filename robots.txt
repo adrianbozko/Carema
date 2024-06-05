@@ -1,5 +1,0 @@
-User-agent: *
-Disallow /oferty/oferta_1.php
-Disallow /oferty/oferta_2.php
-Disallow /oferty/oferta_3.php
-Disallow /oferty/oferta_4.php

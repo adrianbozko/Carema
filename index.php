@@ -53,7 +53,7 @@ require 'oferty/oferta_4.php';
   <meta name="description" content="Dołącz do nas i zostań Opiekunką seniorów! Legalna praca, pełne wsparcie, prosta rekrutacja i wysokie zarobki. Sprawdź sama!" />
   <meta name="keywords" content="Praca w opiece, Praca w opiece w Niemczach, Praca w opiece Niemcy, Opieka nad seniorami Niemcy, Opiekunka seniorów, Opiekunka seniorów w Niemczech, Praca w Niemczech, Praca jako opiekunka, Opieka nad seniorami, Opiekunka osób starszych, Opiekunka osób starszych praca Niemcy, Opiekunka oferty pracy Niemcy, Praca dla opiekunek w Niemczech" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css?version=18_02_2024_01">
+  <link rel="stylesheet" href="css/style.css?version=05_06_2024_01">
   <link rel="stylesheet" href="src/owl.carousel.min.css">
   <link rel="stylesheet" href="src/owl.theme.default.min.css?version=19_09_2023_01">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png?v=1">
@@ -1635,7 +1635,7 @@ require 'oferty/oferta_4.php';
                 Wiadomo, pieniądze to nie wszystko, ale bez pieniędzy… jest ciężko. 😉<br />Robimy co w naszej mocy, negocjujemy z rodzinami, szukamy możliwości, aby już Twoje podstawowe wynagrodzenie było satysfakcjonujące. Jednak to nie wszystko. <b>Doceniamy Twoją pracę, dlatego przez cały rok czekają na Ciebie bonusy.</b> Jakie?
               </div>
               <div class="row direction-row-mobile">
-                <div class="col-xxl d-flex direction-row-mobile-991 mb-3 center-item-991">
+                <!-- <div class="col-xxl d-flex direction-row-mobile-991 mb-3 center-item-991">
                   <img src="images/modal_icon_1.png" class="modal-1-icon">
                   <div class="modal-details">
                     <div class="our-offer-modal-subtitle">Premia za długotrwałą współpracę</div>
@@ -1643,7 +1643,7 @@ require 'oferty/oferta_4.php';
                       Naszym celem jest tworzenie społeczności i budowanie relacji. Cenimy osoby, które dążą do tego samego i są z nami na stałe. Do trzeciego i każdego kolejnego zlecenia dodajemy dodatkowe <b>100€</b>.
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-xxl d-flex direction-row-mobile-991 mb-3 center-item-991">
                   <img src="images/modal_icon_2.png" class="modal-1-icon">
                   <div class="modal-details">
@@ -1653,8 +1653,6 @@ require 'oferty/oferta_4.php';
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row direction-row-mobile">
                 <div class="col-xxl d-flex direction-row-mobile-991 mb-3 center-item-991">
                   <img src="images/modal_icon_3.png" class="modal-1-icon">
                   <div class="modal-details">
@@ -1664,6 +1662,8 @@ require 'oferty/oferta_4.php';
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="row direction-row-mobile">
                 <div class="col-xxl d-flex direction-row-mobile-991 center-item-991">
                   <img src="images/modal_icon_4.png" class="modal-1-icon">
                   <div class="modal-details">
@@ -1673,6 +1673,7 @@ require 'oferty/oferta_4.php';
                     </div>
                   </div>
                 </div>
+                <div class="col-xxl d-flex direction-row-mobile-991 center-item-991"></div>
               </div>
             </div>
           </div>
